@@ -6,7 +6,8 @@ export default function Home() {
     <section>
       <Header />
       <div>
-        <Button />
+        <h1 className="bg-gradient-orange bg-clip-text text-transparent font-bold font-heading">Hello World</h1>
+        <Button>OI</Button>
       </div>
     </section>
   );

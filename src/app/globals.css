@@ -1,5 +1,36 @@
 @import "tailwindcss";
 
-body {
-  font-family: l, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@font-face {
+  font-family: "Conquera";
+  src: url('/fonts/Conquera-Bold.woff2') format('woff2'),
+       url('/fonts/Conquera-Bold.woff') format('woff'),
+       url('/fonts/Conquera-Heavy.woff2') format('woff2'),
+       url('/fonts/Conquera-Heavy.woff') format('woff'),
+       url('/fonts/Conquera-Regular.woff2') format('woff2'),
+       url('/fonts/Conquera-Regular.woff') format('woff'),
+       url('/fonts/Conquera-Medium.woff2') format('woff2'),
+       url('/fonts/Conquera-Medium.woff') format('woff'),
+       url('/fonts/Conquera-Inline.woff2') format('woff2'),
+       url('/fonts/Conquera-Inline.woff') format('woff'),
+       url('/fonts/Conquera-Fine.woff2') format('woff2'),
+       url('/fonts/Conquera-Fine.woff') format('woff');
+}
+
+@layer utilities {
+  .bg-gradient-orange {
+    background-image: var(--color-gradient-orange);
+  }
+}
+
+@theme {
+  --max-width-container: 87.5rem;
+
+  --font-heading: "Conquera", sans-serif;
+  --font-body: "Lato", sans-serif;
+
+  --color-primary-black: #121212;
+  --color-primary-white: #f2f1f2;
+  --color-primary-blue: #142c43;
+  --color-gradient-orange: linear-gradient(to right, #F05824 0%, #CB3233 100%);
 }
