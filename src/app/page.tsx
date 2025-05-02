@@ -1,14 +1,44 @@
 import { Button } from './components/button'
 import { Header } from './components/header'
+import { GridContainer } from './components/GridContainer'
+import { BgImage } from './components/BgImage'
 
 export default function Home() {
   return (
-    <section>
+    <section>{/*HERO SECTION*/}
+      <BgImage />
       <Header />
-      <div>
-        <h1 className="bg-gradient-orange bg-clip-text text-transparent font-bold font-heading">Hello World</h1>
-        <Button>OI</Button>
+      <GridContainer>
+        <div className="w-full flex items-center justify-center relative h-96">
+          <h2 className="text-center font-bold font-heading text-white">
+            <div className="grid grid-cols-4 text-3xl md:text-5xl">
+              <span>PA</span>
+              <span></span>
+              <span></span>
+              <span>CE</span>
+            </div>
+            <div className="mt-2 text-3xl md:text-5xl">FINANCEIRO</div>
+          </h2>
+          <img
+            src="/foto-otavio-17-removebg.webp"
+            alt="Foto do Otávio Daudt, criador do Pace Financeiro"
+            className="w-64 mt-12 absolute -z-10 md:w-80"
+          />
+        </div>
+      </GridContainer>
+      <div className="w-full pt-24 pb-8 flex items-center justify-center text-center text-primary-white bg-[linear-gradient(to_top,_#CB3233_0%,_#F05824_60%,_#F0582400_100%)]">
+        <GridContainer>
+          <div className="mb-4">
+            <h1 className="md:text-2xl font-heading font-bold">Independência Financeira Sem Ilusões</h1>
+            <p className="font-body font-bold">Aprenda sem atalhos, sem riscos desnecessários e com método testado na vida real.</p>
+          </div>
+          <div className="w-full flex items-center justify-center">
+            <Button color="blue">Começar com segurança</Button>
+          </div>
+        </GridContainer>
       </div>
     </section>
+
+
   );
 }

@@ -5,7 +5,7 @@ export function Header() {
     return (
         <header>
             <GridContainer>
-                <div>
+                <div className="flex items-center justify-center">
                     <Image
                         src={"/logopacefinanceiro-var4.svg"}
                         width={160}
