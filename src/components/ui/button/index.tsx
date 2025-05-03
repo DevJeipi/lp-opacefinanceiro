@@ -1,6 +1,6 @@
 'use client'
 
-import { cn } from "./../../helpers/cn"
+import { cn } from "@/app/helpers/cn"
 
 export function Button({ children, color = "orange", }: { children: React.ReactNode; color?: "orange" | "blue"; }) {
 

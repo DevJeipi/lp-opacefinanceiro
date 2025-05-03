@@ -1,6 +1,6 @@
-import { Button } from './button'
-import { GridContainer } from './GridContainer'
-import { BgImage } from './BgImage'
+import { Button } from '@/components/ui/button'
+import { GridContainer } from '@/components/ui/GridContainer'
+import { BgImage } from '@/components/ui/BgImage'
 
 export function SectionHero() {
     return (

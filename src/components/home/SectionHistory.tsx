@@ -1,9 +1,8 @@
-import { GridContainer } from './GridContainer'
-import { Highlight } from './highlight'
+import { GridContainer } from '@/components/ui/GridContainer'
+import { Highlight } from '@/components/ui/highlight'
+import { Button } from '@/components/ui/button';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft, faCheck, faBullhorn } from "@fortawesome/free-solid-svg-icons";
-import { Button } from './button';
-
 
 export function SectionHistory() {
     return (

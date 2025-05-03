@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { GridContainer } from "../GridContainer";
+import { GridContainer } from "../ui/GridContainer";
 
 export function Header() {
     return (
