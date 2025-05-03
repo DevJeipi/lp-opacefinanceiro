@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/****FONTES****/
+/****FONTS****/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @font-face {
   font-family: "Conquera";
@@ -50,11 +50,6 @@
     background-size: 200%;
     animation: gradient-move 4s linear infinite;
   }
-
-  .hover\:bg-solid-orange:hover {
-    background-image: none;
-    background-color: var(--color-secondary-orange);
-  }
 }
 
 /****ANIMATIONS****/
@@ -85,6 +80,6 @@
   --color-primary-white: #f2f1f2;
   --color-primary-blue: #142c43;
   --color-secondary-blue: #2C4F70;
+  --color-primary-orange: #F05824;
   --color-gradient-orange: linear-gradient(to top, #F05824 0%, #CB3233 100%);
-  --color-secondary-orange: #F66939;
 }
