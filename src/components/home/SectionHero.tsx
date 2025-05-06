@@ -1,41 +1,53 @@
+import Image from 'next/image'
+import fotoOtavio from '../../../public/foto-otavio-17-removebg.webp'
 import { Button } from '@/components/ui/button'
 import { GridContainer } from '@/components/ui/GridContainer'
 import { BgImage } from '@/components/ui/BgImage'
 
 export function SectionHero() {
     return (
-        <>
+        <section>
             <BgImage />
-            <GridContainer>
-                <div className="w-full flex items-center justify-center relative h-96">
-                    <h2 className="mt-16 text-center font-bold font-heading text-white">
-                        <div className="grid grid-cols-4 text-3xl md:text-5xl">
+            <GridContainer className="py-0">
+                <div className="relative flex h-80 w-full items-center justify-center md:h-120">
+                    <h2 className="font-heading text-center font-bold text-white">
+                        <div className="xs:text-3xl flex items-center justify-between text-2xl md:text-5xl">
                             <span>PA</span>
-                            <span></span>
-                            <span></span>
                             <span>CE</span>
                         </div>
-                        <div className="mt-2 text-3xl md:text-5xl">FINANCEIRO</div>
+                        <div className="xs:text-3xl mt-2 text-2xl md:text-5xl">
+                            FINANCEIRO
+                        </div>
                     </h2>
-                    <img
-                        src="/foto-otavio-17-removebg.webp"
+                    <Image
+                        src={fotoOtavio}
+                        width={320}
+                        height={480}
                         alt="Foto do Otávio Daudt, criador do Pace Financeiro"
-                        className="w-64 mt-24 md:mt-12 absolute -z-10 md:w-80"
+                        className="xs:w-64 absolute -z-10 h-full w-48 object-cover md:w-80"
+                        priority
+                        placeholder="blur"
+                        sizes="(max-width: 767px) 256px, (max-width: 383px) 192px"
                     />
                 </div>
             </GridContainer>
-            <div className="w-full pt-16 gap-8 flex flex-col items-center justify-center text-center text-primary-white bg-[linear-gradient(to_top,_#CB3233_0%,_#F05824_75%,_#F0582400_100%)]">
+            <div className="text-primary-white bg-gradient-hero mt-[-4rem] flex w-full flex-col items-center justify-center pt-12 text-center">
                 <GridContainer>
                     <div className="mb-4">
-                        <h1 className="md:text-2xl font-heading font-bold">Independência Financeira Sem Ilusões</h1>
-                        <p className="font-body font-bold">Aprenda sem atalhos, sem riscos desnecessários e com método testado na vida real.</p>
+                        <h1 className="font-heading font-bold md:text-2xl">
+                            Independência Financeira Sem Ilusões
+                        </h1>
+                        <p className="font-body font-bold">
+                            Aprenda sem atalhos, sem riscos desnecessários e com
+                            método testado na vida real.
+                        </p>
                     </div>
-                    <div className="w-full flex items-center justify-center">
+                    <div className="flex w-full items-center justify-center">
                         <Button color="blue">Começar com segurança</Button>
                     </div>
                 </GridContainer>
-                <div className="w-full h-8 rounded-t-full bg-primary-white" />
+                <div className="bg-primary-white h-8 w-full rounded-t-full" />
             </div>
-        </>
+        </section>
     )
 }

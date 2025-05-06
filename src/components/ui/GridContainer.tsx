@@ -1,13 +1,20 @@
-import { ReactNode } from "react"
-import { twMerge } from "tailwind-merge"
+import { ReactNode } from 'react'
+import { twMerge } from 'tailwind-merge'
 
 interface GridContainerProps {
     children: ReactNode
     className?: string
 }
 
-export function GridContainer({ children, className } : GridContainerProps) {
+export function GridContainer({ children, className }: GridContainerProps) {
     return (
-        <div className={twMerge("w-full max-w-container mx-auto px-4", className)}>{ children }</div>
+        <div
+            className={twMerge(
+                'max-w-container mx-auto w-full px-4 py-8',
+                className
+            )}
+        >
+            {children}
+        </div>
     )
 }

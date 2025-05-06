@@ -1,16 +1,17 @@
-import Image from "next/image";
-import { GridContainer } from "../ui/GridContainer";
+import Image from 'next/image'
+import { GridContainer } from '../ui/GridContainer'
 
 export function Header() {
     return (
         <header>
-            <GridContainer>
+            <GridContainer py-0>
                 <div className="flex items-center justify-center">
                     <Image
-                        src={"/logopacefinanceiro-var4.svg"}
-                        width={160}
-                        height={160}
+                        src={'/logomark-pacefinanceiro-removebg.png'}
+                        width={130}
+                        height={130}
                         alt="Logo do Pace Financeiro"
+                        priority
                     />
                 </div>
             </GridContainer>
