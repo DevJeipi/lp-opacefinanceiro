@@ -1,7 +1,5 @@
 import Image from 'next/image'
-{
-    /*import fotoCard from '../../../public/'*/
-}
+import fotoCard from '../../../public/img-icon.webp'
 import { GridContainer } from '@/components/ui/GridContainer'
 import {
     Card,
@@ -16,20 +14,20 @@ import { BadgeCheck } from 'lucide-react'
 export function SectionBenefits() {
     return (
         <section className="bg-primary-white font-body rounded-br-4xl">
-            <GridContainer className="flex flex-col items-center justify-center p-0 pt-32 md:flex-row md:px-8 lg:py-6">
-                {/*<div>
-                            <Image
-                                src={fotoCard}
-                                width={480}
-                                height={480}
-                                alt="Foto de decoração da seção de beneficios"
-                                className=""
-                                loading="lazy"
-                                placeholder="blur"
-                                sizes=""
-                            />
-                        </div>*/}
-                <Card className="bg-primary-blue w-full max-w-3xl rounded-tl-4xl rounded-tr-none rounded-br-4xl rounded-bl-none border-0 pt-32 text-center lg:pt-6 lg:pr-8 lg:pl-64 lg:text-left">
+            <GridContainer className="relative flex flex-col items-center justify-center p-0 pt-32 md:flex-row md:px-8 lg:py-6">
+                <div className="xs:-translate-y-3/4 absolute z-20 -translate-y-4/5 lg:-translate-x-3/4 lg:-translate-y-0">
+                    <Image
+                        src={fotoCard}
+                        width={448}
+                        height={448}
+                        alt="Foto de decoração da seção de beneficios"
+                        className="max-w-80 lg:max-w-md"
+                        loading="lazy"
+                        placeholder="blur"
+                        sizes="(max-width: 1023px) 320px, 448px"
+                    />
+                </div>
+                <Card className="bg-primary-blue relative z-10 w-full max-w-2xl rounded-tl-4xl rounded-tr-none rounded-br-4xl rounded-bl-none border-0 pt-32 text-center lg:pt-6 lg:pr-8 lg:pl-48 lg:text-left">
                     <CardHeader>
                         <CardTitle className="text-primary-white text-2xl font-bold">
                             Mas eu não entendo nada de finanças…
@@ -38,9 +36,9 @@ export function SectionBenefits() {
                             </span>
                         </CardTitle>
                         <CardDescription className="text-primary-white text-xl">
-                            <div className="flex w-full items-center justify-center font-bold">
+                            <div className="flex w-full items-center justify-center gap-2 font-bold">
                                 <span className="bg-primary-white h-0.5 w-full lg:hidden"></span>
-                                <span className="px-4 whitespace-nowrap lg:pl-0">
+                                <span className="whitespace-nowrap">
                                     Fique tranquilo
                                 </span>
                                 <span className="bg-primary-white h-0.5 w-full"></span>

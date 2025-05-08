@@ -18,11 +18,11 @@ export default function Home() {
             <main className="flex-1">
                 <SectionHero />
                 <SectionHistory />
-                <section className="bg-gradient-animated">
+                <div className="bg-gradient-animated">
                     <SectionBenefits />
                     <SectionMini />
                     <SectionWhoami />
-                </section>
+                </div>
                 <SectionList />
                 <SectionModules />
                 <SectionPricing />

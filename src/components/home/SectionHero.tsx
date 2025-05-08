@@ -27,7 +27,7 @@ export function SectionHero() {
                         className="xs:w-64 absolute -z-10 h-full w-48 object-cover md:w-80"
                         priority
                         placeholder="blur"
-                        sizes="(max-width: 767px) 256px, (max-width: 383px) 192px"
+                        sizes="(max-width: 383px) 192px, (max-width: 767px) 256px, 320px"
                     />
                 </div>
             </GridContainer>

@@ -1,23 +1,31 @@
 import { GridContainer } from '@/components/ui/GridContainer'
 import { Highlight } from '@/components/ui/highlight'
 import { Button } from '@/components/ui/button'
-import { ChartNoAxesColumnIncreasing, Check, Quote } from 'lucide-react'
+import {
+    ChartNoAxesColumnIncreasing,
+    Check,
+    Quote,
+    KeyRound,
+} from 'lucide-react'
 
 export function SectionHistory() {
     return (
         <section className="bg-primary-white flex w-full items-center justify-center overflow-hidden text-center">
             <GridContainer className="flex flex-col items-center justify-center gap-8">
-                <h2 className="font-heading font-bold md:text-2xl">
-                    E se você pudesse <br />
-                    <Highlight>virar a chave</Highlight>
-                    da sua vida financeira?
-                </h2>
+                <div className="flex flex-col items-center justify-center gap-2">
+                    <KeyRound color="var(--color-primary-orange)" size={32} />
+                    <h3 className="font-heading text-primary-black font-bold md:text-2xl">
+                        E se você pudesse <br />
+                        <Highlight>virar a chave</Highlight>
+                        da sua vida financeira?
+                    </h3>
+                </div>
 
                 <div className="font-body w-full">
-                    <span className="text-gray-600">
+                    <span className="text-gray-600 md:text-xl">
                         Conheça a história da Jéssica
                     </span>
-                    <p className="font-bold md:text-xl">
+                    <p className="text-primary-black font-bold md:text-xl">
                         A Jéssica,
                         <span className="text-gradient-animated">
                             {' '}
@@ -51,7 +59,7 @@ export function SectionHistory() {
                 </div>
 
                 <div className="font-body w-full md:text-xl">
-                    <p className="font-bold">
+                    <p className="text-primary-black font-bold">
                         <span className="text-primary-blue">
                             Jéssica descobriu um caminho{' '}
                         </span>
@@ -115,7 +123,7 @@ export function SectionHistory() {
                             color="var(--color-primary-white)"
                         />
                     </div>
-                    <p className="font-body text-xl font-bold">
+                    <p className="font-body text-primary-black text-xl font-bold">
                         Mais de
                         <span className="text-gradient-animated">
                             {' '}
