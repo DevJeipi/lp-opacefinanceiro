@@ -10,7 +10,7 @@ export function SectionHero() {
             <BgImage />
             <GridContainer className="py-0">
                 <div className="relative flex h-80 w-full items-center justify-center md:h-120">
-                    <h2 className="font-heading text-center font-bold text-white">
+                    <h1 className="font-heading text-center font-bold text-white">
                         <div className="xs:text-3xl flex items-center justify-between text-2xl md:text-5xl">
                             <span>PA</span>
                             <span>CE</span>
@@ -18,7 +18,7 @@ export function SectionHero() {
                         <div className="xs:text-3xl mt-2 text-2xl md:text-5xl">
                             FINANCEIRO
                         </div>
-                    </h2>
+                    </h1>
                     <Image
                         src={fotoOtavio}
                         width={320}

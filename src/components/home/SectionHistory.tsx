@@ -14,11 +14,11 @@ export function SectionHistory() {
             <GridContainer className="flex flex-col items-center justify-center gap-8">
                 <div className="flex flex-col items-center justify-center gap-2">
                     <KeyRound color="var(--color-primary-orange)" size={32} />
-                    <h3 className="font-heading text-primary-black font-bold md:text-2xl">
+                    <h1 className="font-heading text-primary-black font-bold md:text-2xl">
                         E se você pudesse <br />
                         <Highlight>virar a chave</Highlight>
                         da sua vida financeira?
-                    </h3>
+                    </h1>
                 </div>
 
                 <div className="font-body w-full">
@@ -27,9 +27,8 @@ export function SectionHistory() {
                     </span>
                     <p className="text-primary-black font-bold md:text-xl">
                         A Jéssica,
-                        <span className="text-gradient-animated">
-                            {' '}
-                            antes de entrar no curso,{' '}
+                        <span className="text-gradient-animated px-1">
+                            antes de entrar no curso,
                         </span>
                         era aquela pessoa que vivia no limite do cheque
                         especial. <br />
@@ -125,9 +124,8 @@ export function SectionHistory() {
                     </div>
                     <p className="font-body text-primary-black text-xl font-bold">
                         Mais de
-                        <span className="text-gradient-animated">
-                            {' '}
-                            40 mil alunos{' '}
+                        <span className="text-gradient-animated px-1">
+                            40 mil alunos
                         </span>
                         já passaram por esse curso e mudaram completamente sua
                         relação com o dinheiro.

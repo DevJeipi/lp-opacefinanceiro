@@ -18,7 +18,7 @@ export function Button({
     }
 
     const spanColors = {
-        orange: 'text-slate-500',
+        orange: 'text-primary-black',
         blue: 'text-primary-white',
     }
 

@@ -1,14 +1,16 @@
 import Image from 'next/image'
+import fotoBg from '../../../public/bg-graphic-2.webp'
 
 export function BgImage() {
     return (
         <>
             <div className="absolute inset-0 -z-20">
                 <Image
-                    src="/bg-graphic-2.webp"
-                    alt="Background Graphic"
+                    src={fotoBg}
+                    alt="Gráfico de fundo"
                     fill
                     style={{ objectFit: 'cover' }}
+                    placeholder="blur"
                     className="bg-cover bg-no-repeat md:bg-center"
                     priority
                 />
