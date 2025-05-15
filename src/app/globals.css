@@ -15,8 +15,8 @@
     .bg-gradient-hero {
         background: linear-gradient(
             to top,
-            #cb3233 0%,
-            #f05824 75%,
+            #f05824 0%,
+            #f05824 50%,
             #f0582400 100%
         );
     }

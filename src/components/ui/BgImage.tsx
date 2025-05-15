@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import fotoBg from '../../../public/bg-graphic-2.webp'
+import fotoBg from '../../../public/velas2.png'
 
 export function BgImage() {
     return (
@@ -11,12 +11,12 @@ export function BgImage() {
                     fill
                     style={{ objectFit: 'cover' }}
                     placeholder="blur"
-                    className="bg-cover bg-no-repeat md:bg-center"
+                    className="bg-cover bg-center bg-no-repeat"
                     priority
                 />
             </div>
 
-            <div className="bg-primary-blue/30 absolute inset-0 -z-10 backdrop-blur-sm" />
+            <div className="bg-primary-blue/60 absolute inset-0 -z-10 backdrop-blur-xs" />
         </>
     )
 }

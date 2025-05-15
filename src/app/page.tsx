@@ -1,6 +1,5 @@
-import { Header } from '@/components/header'
 import { SectionHero } from '@/components/home/SectionHero'
-import { SectionHistory } from '@/components/home/SectionHistory'
+import { SectionPersuasive } from '@/components/home/SectionPersuasive'
 import { SectionBenefits } from '@/components/home/SectionBenefits'
 import { SectionMini } from '@/components/home/SectionMini'
 import { SectionWhoami } from '@/components/home/SectionWhoami'
@@ -14,10 +13,9 @@ import { Footer } from '@/components/footer'
 export default function Home() {
     return (
         <div className="flex min-h-screen flex-col overflow-hidden">
-            <Header />
             <main className="flex-1">
                 <SectionHero />
-                <SectionHistory />
+                <SectionPersuasive />
                 <div className="bg-gradient-animated">
                     <SectionBenefits />
                     <SectionMini />

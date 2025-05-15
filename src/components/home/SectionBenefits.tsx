@@ -5,7 +5,6 @@ import {
     Card,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
 } from '@/components/ui/card'
@@ -15,7 +14,7 @@ export function SectionBenefits() {
     return (
         <section className="bg-primary-white font-body rounded-br-4xl">
             <GridContainer className="relative flex flex-col items-center justify-center p-0 pt-32 md:flex-row md:px-8 lg:py-6">
-                <div className="xs:-translate-y-3/4 absolute z-20 -translate-y-4/5 lg:-translate-x-3/4 lg:-translate-y-0">
+                <div className="absolute z-20 -translate-y-11/12 lg:-translate-x-3/4 lg:-translate-y-0">
                     <Image
                         src={fotoCard}
                         width={448}
@@ -43,26 +42,30 @@ export function SectionBenefits() {
                                 </span>
                                 <span className="bg-primary-white h-0.5 w-full"></span>
                             </div>
-                            Conteúdo para iniciantes não falta
+                            É conteúdo que não falta
                         </CardDescription>
                     </CardHeader>
                     <CardContent>
                         <ul className="flex flex-col gap-4 text-left font-bold">
                             <li className="bg-primary-white flex items-center justify-start gap-3 rounded-full px-3 py-2">
                                 <BadgeCheck color="var(--color-primary-orange)" />
-                                <p>+3 E-books sobre finanças</p>
+                                <p>38 aulas em vídeo</p>
                             </li>
                             <li className="bg-primary-white flex items-center justify-start gap-3 rounded-full px-3 py-2">
                                 <BadgeCheck color="var(--color-primary-orange)" />
-                                <p>+2 Planilhas Financeiras</p>
+                                <p>2 E-books sobre finanças</p>
                             </li>
                             <li className="bg-primary-white flex items-center justify-start gap-3 rounded-full px-3 py-2">
                                 <BadgeCheck color="var(--color-primary-orange)" />
-                                <p>Diversos Conteúdos Gravados</p>
+                                <p>2 Planilhas Financeiras</p>
                             </li>
                             <li className="bg-primary-white flex items-center justify-start gap-3 rounded-full px-3 py-2">
                                 <BadgeCheck color="var(--color-primary-orange)" />
-                                <p>Insights especiais</p>
+                                <p>Curso pocket extra</p>
+                            </li>
+                            <li className="bg-primary-white flex items-center justify-start gap-3 rounded-full px-3 py-2">
+                                <BadgeCheck color="var(--color-primary-orange)" />
+                                <p>4 artigos exclusivos</p>
                             </li>
                         </ul>
                     </CardContent>

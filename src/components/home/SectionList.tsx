@@ -18,7 +18,7 @@ export function SectionList() {
                             color="var(--color-primary-orange)"
                             size={32}
                         />
-                        <span className="font-body text-slate-500">
+                        <span className="font-body font-bold text-slate-500">
                             É agora que a jornada começa
                         </span>
                         <h1 className="font-heading text-primary-black font-bold md:text-2xl">
@@ -79,7 +79,7 @@ export function SectionList() {
 
                     {/* Desktop */}
                     <div className="relative hidden md:block">
-                        <div className="bg-primary-blue absolute top-0 left-1/2 z-0 h-full w-0.5 -translate-x-1/2"></div>
+                        <div className="from-primary-blue/0 via-primary-blue to-primary-blue/0 absolute top-0 left-1/2 z-0 h-full w-0.5 -translate-x-1/2 bg-gradient-to-t"></div>
                         <div>
                             <ul className="relative z-10 grid grid-cols-2 grid-rows-4">
                                 <li className="flex items-center justify-end">

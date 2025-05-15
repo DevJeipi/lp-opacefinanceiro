@@ -34,8 +34,8 @@ export function SectionWhoami() {
                         {[
                             'Educador financeiro, consultor e mentor.',
                             'Mais de 20 anos de experiência no mercado.',
-                            'Já ajudou milhares a saírem das dívidas.',
-                            'Pai e marido dedicado no que faz.',
+                            'Investidor autônomo, sem ligações com corretoras ou bancos.',
+                            'Apaixonado por corridas e maratonas.',
                         ].map((text, i) => (
                             <li
                                 key={i}

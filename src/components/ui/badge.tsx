@@ -16,7 +16,7 @@ const badgeVariants = cva(
                 destructive:
                     'border-transparent bg-red-500 text-white [a&]:hover:bg-red-500/90 focus-visible:ring-red-500/20 dark:focus-visible:ring-red-500/40 dark:bg-red-500/60 dark:bg-red-900 dark:[a&]:hover:bg-red-900/90 dark:focus-visible:ring-red-900/20 dark:dark:focus-visible:ring-red-900/40 dark:dark:bg-red-900/60',
                 outline:
-                    'text-primary-blue border border-primary-blue/60 px-6 font-body text-md rounded-full',
+                    'text-primary-blue border border-primary-blue/60 px-6 font-body text-md rounded-full text-center',
             },
         },
         defaultVariants: {
