@@ -2,19 +2,51 @@ import {
     Card,
     CardContent,
     CardDescription,
+    CardFooter,
     CardHeader,
     CardTitle,
 } from '@/components/ui/card'
 import { GridContainer } from '@/components/ui/GridContainer'
 import { Button } from '@/components/ui/button'
-import Image from 'next/image'
 import { CheckCircle2, XCircle } from 'lucide-react'
+
+// Lista de produtos
+const produtos = [
+    {
+        nome: 'Curso Do Cheque Especial à Independência Financeira',
+        preco: 'R$ 497',
+    },
+    {
+        nome: 'E-book Renascimento Financeiro',
+        preco: 'R$ 47',
+    },
+    {
+        nome: 'E-book nome do e-book',
+        preco: 'R$ 57',
+    },
+    {
+        nome: 'Planilha de controle financeiro',
+        preco: 'R$ 37',
+    },
+    {
+        nome: 'Planilha de x tarefa',
+        preco: 'R$ 27',
+    },
+    {
+        nome: 'Curso Pocket',
+        preco: 'R$ 117',
+    },
+    {
+        nome: '4 artigos exclusivos',
+        preco: 'R$ 67',
+    },
+]
 
 export function SectionPricing() {
     return (
         <section className="bg-primary-white">
-            <GridContainer className="flex flex-col items-center justify-center gap-8 text-center">
-                <h1 className="font-heading text-primary-blue flex flex-col text-2xl font-bold">
+            <GridContainer className="flex flex-col items-center justify-center gap-12 text-center">
+                <h1 className="font-heading text-primary-blue flex flex-col font-bold md:text-2xl">
                     <span className="font-body">Por que este curso é</span>
                     Diferente de tudo
                     <span className="font-body">que você já viu?</span>
@@ -67,42 +99,65 @@ export function SectionPricing() {
                         </span>
                     </p>
                 </div>
-                <Card className="bg-primary-blue text-primary-white font-bold">
+                <Card className="bg-primary-black text-primary-white font-body w-full font-bold md:w-2/3">
                     <CardHeader>
-                        <CardTitle className="font-body text-xl">
-                            Método comprovado para investir
+                        <CardTitle className="text-2xl sm:text-3xl">
+                            São
+                            <span className="text-gradient-animated px-2">
+                                X produtos
+                            </span>
+                            do
+                            <br /> Pace Financeiro pelo
+                            <span className="text-gradient-animated px-2">
+                                preço de 1
+                            </span>
                         </CardTitle>
-                        <CardDescription className="font-heading text-xl">
-                            2497
-                        </CardDescription>
                     </CardHeader>
                     <CardContent>
-                        <hr />
-                        <ul>
-                            <li className="flex w-full items-center justify-center text-left">
-                                <CheckCircle2
-                                    fill="var(--color-primary-white)"
-                                    stroke="var(--color-primary-blue)"
-                                />
-                                <p>Acesso Vitalício</p>
-                            </li>
-                            <li>
-                                <CheckCircle2 />
-                                <p>+20 horas de conteúdo</p>
-                            </li>
-                            <li>
-                                <CheckCircle2 />
-                                <p>Conteúdo estruturado</p>
-                            </li>
-                            <li>
-                                <CheckCircle2 />
-                                <p>Exemplos reais</p>
-                            </li>
+                        <div className="bg-primary-white mb-6 h-0.5 w-full rounded-full"></div>
+                        <ul className="mb-6 flex flex-col gap-4">
+                            {produtos.map((item, index) => (
+                                <li
+                                    key={index}
+                                    className="flex w-full flex-col lg:flex-row"
+                                >
+                                    <div className="flex flex-1 items-center justify-between gap-4 text-left lg:text-xl">
+                                        <div className="flex items-center gap-2">
+                                            <CheckCircle2
+                                                fill="var(--color-primary-orange)"
+                                                stroke="var(--color-primary-black)"
+                                            />
+                                            <p className="flex-1">
+                                                {item.nome}
+                                            </p>
+                                        </div>
+                                        <div className="to-primary-orange hidden h-2 flex-1 bg-gradient-to-r from-transparent lg:block" />
+                                        <span className="text-primary-white rounded-sm p-1 whitespace-nowrap">
+                                            {item.preco}
+                                        </span>
+                                    </div>
+                                    <div className="to-primary-orange h-1 w-full bg-gradient-to-r from-transparent lg:hidden" />
+                                </li>
+                            ))}
                         </ul>
+                    </CardContent>
+                    <CardFooter className="flex flex-col items-center justify-center">
+                        <div className="font-body text-secondary-orange flex items-end gap-1 font-normal">
+                            <p className="md:text-xl">De:</p>
+                            <span className="text-2xl line-through md:text-4xl">
+                                R$ 1.497
+                            </span>
+                        </div>
+                        <div className="font-body mb-4 flex items-end gap-1">
+                            <p className="text-2xl md:text-3xl">Por:</p>
+                            <span className="text-4xl md:text-6xl">
+                                10X R$ 23,70
+                            </span>
+                        </div>
                         <Button color="secondaryorange">
                             Aprender com Segurança
                         </Button>
-                    </CardContent>
+                    </CardFooter>
                 </Card>
             </GridContainer>
         </section>

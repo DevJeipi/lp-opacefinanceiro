@@ -12,7 +12,7 @@ const badgeVariants = cva(
                 default:
                     'text-center border-transparent bg-gradient-animated text-primary-white font-heading font-bold text-xl rounded-full py-1 px-4',
                 secondary:
-                    'border-transparent bg-slate-100 text-slate-900 [a&]:hover:bg-slate-100/90 dark:bg-slate-800 dark:text-slate-50 dark:[a&]:hover:bg-slate-800/90',
+                    'font-heading font-bold flex items-center justify-center text-primary-white border border-primary-white rounded-full py-0.5 px-2',
                 destructive:
                     'border-transparent bg-red-500 text-white [a&]:hover:bg-red-500/90 focus-visible:ring-red-500/20 dark:focus-visible:ring-red-500/40 dark:bg-red-500/60 dark:bg-red-900 dark:[a&]:hover:bg-red-900/90 dark:focus-visible:ring-red-900/20 dark:dark:focus-visible:ring-red-900/40 dark:dark:bg-red-900/60',
                 outline:

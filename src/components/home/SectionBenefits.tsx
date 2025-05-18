@@ -13,7 +13,7 @@ import { BadgeCheck } from 'lucide-react'
 export function SectionBenefits() {
     return (
         <section className="bg-primary-white font-body rounded-br-4xl">
-            <GridContainer className="relative flex flex-col items-center justify-center p-0 pt-32 md:flex-row md:px-8 lg:py-6">
+            <GridContainer className="relative flex flex-col items-center justify-center p-0 pt-48 md:flex-row md:px-8 lg:py-6">
                 <div className="absolute z-20 -translate-y-11/12 lg:-translate-x-3/4 lg:-translate-y-0">
                     <Image
                         src={fotoCard}
@@ -49,23 +49,19 @@ export function SectionBenefits() {
                         <ul className="flex flex-col gap-4 text-left font-bold">
                             <li className="bg-primary-white flex items-center justify-start gap-3 rounded-full px-3 py-2">
                                 <BadgeCheck color="var(--color-primary-orange)" />
+                                <p>+10 horas de conteúdo</p>
+                            </li>
+                            <li className="bg-primary-white flex items-center justify-start gap-3 rounded-full px-3 py-2">
+                                <BadgeCheck color="var(--color-primary-orange)" />
+                                <p>Metologia simples e didática</p>
+                            </li>
+                            <li className="bg-primary-white flex items-center justify-start gap-3 rounded-full px-3 py-2">
+                                <BadgeCheck color="var(--color-primary-orange)" />
                                 <p>38 aulas em vídeo</p>
                             </li>
                             <li className="bg-primary-white flex items-center justify-start gap-3 rounded-full px-3 py-2">
                                 <BadgeCheck color="var(--color-primary-orange)" />
-                                <p>2 E-books sobre finanças</p>
-                            </li>
-                            <li className="bg-primary-white flex items-center justify-start gap-3 rounded-full px-3 py-2">
-                                <BadgeCheck color="var(--color-primary-orange)" />
-                                <p>2 Planilhas Financeiras</p>
-                            </li>
-                            <li className="bg-primary-white flex items-center justify-start gap-3 rounded-full px-3 py-2">
-                                <BadgeCheck color="var(--color-primary-orange)" />
-                                <p>Curso pocket extra</p>
-                            </li>
-                            <li className="bg-primary-white flex items-center justify-start gap-3 rounded-full px-3 py-2">
-                                <BadgeCheck color="var(--color-primary-orange)" />
-                                <p>4 artigos exclusivos</p>
+                                <p>Acesso vitalício</p>
                             </li>
                         </ul>
                     </CardContent>
