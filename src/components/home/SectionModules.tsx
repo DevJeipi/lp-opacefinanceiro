@@ -21,7 +21,7 @@ export function SectionModules() {
                         alt="Foto decorativa de velas de investimento"
                         loading="lazy"
                         placeholder="blur"
-                        className="xs:block absolute top-0 z-0 mt-2 hidden w-80 blur-xs md:w-96"
+                        className="xs:block absolute top-0 z-0 mt-6 hidden w-80 blur-xs md:w-96"
                         sizes="(max-width: 767px) 320px, 384px"
                     />
                     <h1 className="font-heading text-primary-black z-10 text-center font-bold md:text-2xl">
@@ -39,8 +39,9 @@ export function SectionModules() {
                                     01
                                 </span>
                                 <p className="font-body mb-2 block w-full lg:hidden">
-                                    Texto de descrição do módulo, pode ser
-                                    breve, um parágrafo basta.
+                                    Aprenda as ferramentas que vão colocar a sua
+                                    vida financeira sob o seu controle
+                                    novamente.
                                 </p>
                                 <div className="group relative cursor-pointer overflow-hidden rounded-3xl">
                                     <Image
@@ -53,9 +54,9 @@ export function SectionModules() {
                                     <div className="bg-primary-black/80 absolute inset-0 flex flex-row items-end justify-start rounded-3xl px-6 py-6 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                                         <div className="flex flex-col items-start justify-end">
                                             <p className="font-body text-primary-white text-left">
-                                                Texto de descrição do módulo,
-                                                pode ser breve, um parágrafo
-                                                basta.
+                                                Aprenda as ferramentas que vão
+                                                colocar a sua vida financeira
+                                                sob o seu controle novamente.
                                             </p>
                                         </div>
                                         <Link
@@ -84,8 +85,10 @@ export function SectionModules() {
                                     02
                                 </span>
                                 <p className="font-body mb-2 block w-full lg:hidden">
-                                    Texto de descrição do módulo, pode ser
-                                    breve, um parágrafo basta.
+                                    Se você alguma vez já se sentiu confuso com
+                                    a sopa de letrinhas do mercado financeiro em
+                                    relação a investimentos, este módulo é para
+                                    você!
                                 </p>
                                 <div className="group relative cursor-pointer overflow-hidden rounded-3xl">
                                     <Image
@@ -98,9 +101,11 @@ export function SectionModules() {
                                     <div className="bg-primary-black/80 absolute inset-0 flex flex-row items-end justify-start rounded-3xl px-6 py-6 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                                         <div className="flex flex-col items-start justify-end">
                                             <p className="font-body text-primary-white text-left">
-                                                Texto de descrição do módulo,
-                                                pode ser breve, um parágrafo
-                                                basta.
+                                                Se você alguma vez já se sentiu
+                                                confuso com a sopa de letrinhas
+                                                do mercado financeiro em relação
+                                                a investimentos, este módulo é
+                                                pra você!
                                             </p>
                                         </div>
                                         <Link
@@ -129,8 +134,10 @@ export function SectionModules() {
                                     03
                                 </span>
                                 <p className="font-body mb-2 block w-full lg:hidden">
-                                    Texto de descrição do módulo, pode ser
-                                    breve, um parágrafo basta.
+                                    Monte sua estratégia de investimentos e
+                                    descubra quando poderá declarar, com base
+                                    matemática, sua Independência Financeira — e
+                                    como será viver essa nova realidade.
                                 </p>
                                 <div className="group relative cursor-pointer overflow-hidden rounded-3xl">
                                     <Image
@@ -143,9 +150,12 @@ export function SectionModules() {
                                     <div className="bg-primary-black/80 absolute inset-0 flex flex-row items-end justify-start rounded-3xl px-6 py-6 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                                         <div className="flex flex-col items-start justify-end">
                                             <p className="font-body text-primary-white text-left">
-                                                Texto de descrição do módulo,
-                                                pode ser breve, um parágrafo
-                                                basta.
+                                                Monte sua estratégia de
+                                                investimentos e descubra quando
+                                                poderá declarar, com base
+                                                matemática, sua Independência
+                                                Financeira — e como será viver
+                                                essa nova realidade.
                                             </p>
                                         </div>
                                         <Link

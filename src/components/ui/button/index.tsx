@@ -1,6 +1,7 @@
 'use client'
 
 import { cn } from '@/lib/utils'
+import Link from 'next/link'
 
 export function Button({
     children,
@@ -32,7 +33,7 @@ export function Button({
             <button
                 className={cn(defaultButtonClasses, colors[color], className)}
             >
-                {children}
+                <Link href={'#'}>{children}</Link>
             </button>
             <span
                 className={cn(
