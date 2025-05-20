@@ -10,7 +10,7 @@ import { MessageCircleQuestion } from 'lucide-react'
 export function SectionFAQ() {
     return (
         <section className="bg-primary-white">
-            <div className="bg-primary-blue/10 rounded-t-4xl">
+            <div className="bg-blue-low-op rounded-t-4xl">
                 <GridContainer className="flex flex-col items-center justify-center gap-8 text-center">
                     <div className="flex flex-col items-center justify-center">
                         <MessageCircleQuestion

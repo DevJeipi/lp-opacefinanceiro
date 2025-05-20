@@ -22,8 +22,8 @@ export default function Home() {
                     <SectionWhoami />
                 </div>
                 <SectionList />
-                <SectionModules />
                 <SectionPricing />
+                <SectionModules />
                 <SectionGuarantee />
                 <SectionFAQ />
             </main>

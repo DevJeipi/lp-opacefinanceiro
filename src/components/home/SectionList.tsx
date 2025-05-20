@@ -10,7 +10,7 @@ import {
 
 export function SectionList() {
     return (
-        <section className="bg-primary-blue/10">
+        <section className="bg-blue-low-op">
             <div className="bg-primary-white rounded-br-4xl">
                 <GridContainer className="flex flex-col items-center justify-center gap-6">
                     <div className="flex flex-col items-center justify-center text-center">
@@ -41,7 +41,7 @@ export function SectionList() {
                                 />
                                 <p>Planejar seu mês com clareza.</p>
                             </li>
-                            <li className="bg-primary-blue/10 text-primary-black flex items-center justify-start gap-6 rounded-tl-3xl rounded-br-3xl px-9 py-6">
+                            <li className="bg-blue-low-op text-primary-black flex items-center justify-start gap-6 rounded-tl-3xl rounded-br-3xl px-9 py-6">
                                 <ChartLine
                                     className="min-h-9 min-w-9"
                                     color="var(--color-primary-blue)"
@@ -64,7 +64,7 @@ export function SectionList() {
                                     ruins.
                                 </p>
                             </li>
-                            <li className="bg-primary-blue/10 text-primary-black flex items-center justify-start gap-6 rounded-tl-3xl rounded-br-3xl px-9 py-6">
+                            <li className="bg-blue-low-op text-primary-black flex items-center justify-start gap-6 rounded-tl-3xl rounded-br-3xl px-9 py-6">
                                 <Users
                                     className="min-h-9 min-w-9"
                                     color="var(--color-primary-blue)"

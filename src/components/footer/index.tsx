@@ -23,7 +23,7 @@ export function Footer() {
                     </p>
                 </div>
 
-                <div className="bg-primary-white/20 h-0.5 w-full md:h-12 md:w-0.5"></div>
+                <div className="bg-blue-low-op h-0.25 w-full md:h-12 md:w-0.25"></div>
 
                 <Link
                     href={'https://www.instagram.com/opacefinanceiro/'}
