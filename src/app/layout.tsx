@@ -12,7 +12,18 @@ export const metadata: Metadata = {
         title: 'O Pace Financeiro | Invista com segurança',
         description:
             'Aprenda a investir sem riscos utilizando o método Pace Financeiro, e adquira sua independência financeira.',
-        images: ['/bg-graphic-2.webp'], //Adicionar URL da imagem
+        url: 'https://opacefinanceiro.com.br', // Altere para seu domínio real
+        siteName: 'Pace Financeiro',
+        images: ['/bg-graphic-2.webp'],
+        locale: 'pt_BR',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Pace Financeiro | Invista com segurança',
+        description:
+            'Aprenda a investir sem riscos utilizando o método Pace Financeiro, e adquira sua independência financeira.',
+        images: ['https://opacefinanceiro.com.br/bg-graphic-2.webp'],
     },
     robots: {
         index: true,
