@@ -14,31 +14,27 @@ import { CheckCircle2, XCircle } from 'lucide-react'
 const produtos = [
     {
         nome: 'Curso Do Cheque Especial à Independência Financeira',
-        preco: 'R$ 497',
+        preco: 'R$ 1187',
     },
     {
         nome: 'E-book Renascimento Financeiro',
-        preco: 'R$ 47',
+        preco: 'R$ 77',
     },
     {
-        nome: 'E-book nome do e-book',
+        nome: 'E-book Como Começar com Segurança',
+        preco: 'R$ 77',
+    },
+    {
+        nome: 'Planilha de controle de gastos',
         preco: 'R$ 57',
     },
     {
-        nome: 'Planilha de controle financeiro',
-        preco: 'R$ 37',
-    },
-    {
-        nome: 'Planilha de x tarefa',
-        preco: 'R$ 27',
-    },
-    {
-        nome: 'Curso Pocket',
-        preco: 'R$ 117',
+        nome: 'Planilha de portfólio de investimentos',
+        preco: 'R$ 57',
     },
     {
         nome: '4 artigos exclusivos',
-        preco: 'R$ 67',
+        preco: 'R$ 87',
     },
 ]
 
@@ -104,7 +100,7 @@ export function SectionPricing() {
                         <CardTitle className="text-2xl sm:text-3xl">
                             São
                             <span className="text-gradient-animated px-2">
-                                X produtos
+                                6 produtos
                             </span>
                             do
                             <br /> Pace Financeiro pelo
@@ -145,14 +141,12 @@ export function SectionPricing() {
                         <div className="font-body text-secondary-orange flex items-end gap-1 font-normal">
                             <p className="md:text-xl">De:</p>
                             <span className="text-2xl line-through md:text-4xl">
-                                R$ 1.497
+                                R$ 1.542
                             </span>
                         </div>
                         <div className="font-body mb-4 flex items-end gap-1">
                             <p className="text-2xl md:text-3xl">Por:</p>
-                            <span className="text-4xl md:text-6xl">
-                                10X R$ 23,70
-                            </span>
+                            <span className="text-4xl md:text-6xl">R$ 197</span>
                         </div>
                         <Button color="secondaryorange">
                             Aprender com Segurança
