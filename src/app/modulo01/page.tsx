@@ -74,7 +74,7 @@ export default function Modulo01() {
                 <GridContainer>
                     <div className="flex w-full items-center gap-4 text-left">
                         <Link
-                            href={'https://pacefinanceiro.com.br'}
+                            href={'/'}
                             className="hover:bg-primary-white/30 cursor-pointer rounded-full p-2 transition-all duration-300"
                         >
                             <ArrowLeft
