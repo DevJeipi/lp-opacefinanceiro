@@ -12,7 +12,7 @@ export function SectionGuarantee() {
                         color="var(--color-primary-orange)"
                     />
                     <h1 className="font-heading font-bold md:text-2xl">
-                        "E se eu não tiver resultado?"
+                        &quot;E se eu não tiver resultado?&quot;
                     </h1>
                 </div>
                 <div className="bg-primary-blue flex flex-col items-center justify-center gap-8 rounded-tr-4xl rounded-bl-4xl px-4 py-8">

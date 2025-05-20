@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import fotoDireita from '../../../public/compose-otavio-2.png'
 import { Button } from '@/components/ui/button'
 import { GridContainer } from '@/components/ui/GridContainer'
 import { Pin, Target, Landmark, Brain, Rocket } from 'lucide-react'
