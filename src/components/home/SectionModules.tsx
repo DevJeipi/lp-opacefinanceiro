@@ -60,6 +60,7 @@ export function SectionModules() {
                                     <Link
                                         href={'/modulo01'}
                                         className="hover:bg-primary-white/30 rounded-full p-2 transition-all duration-300"
+                                        aria-label="Acessar descrição do módulo 01"
                                     >
                                         <ArrowRight
                                             size={32}
@@ -70,6 +71,7 @@ export function SectionModules() {
                                 <Link
                                     href={'/modulo01'}
                                     className="bg-primary-white/30 absolute top-4 right-4 block -rotate-z-45 rounded-full p-2 transition-all duration-300 lg:hidden"
+                                    aria-label="Acessar descrição do módulo 01"
                                 >
                                     <ArrowRight
                                         size={32}
@@ -109,6 +111,7 @@ export function SectionModules() {
                                     <Link
                                         href={'/modulo02'}
                                         className="hover:bg-primary-white/30 rounded-full p-2 transition-all duration-300"
+                                        aria-label="Acessar descrição do módulo 02"
                                     >
                                         <ArrowRight
                                             size={32}
@@ -119,6 +122,7 @@ export function SectionModules() {
                                 <Link
                                     href={'/modulo02'}
                                     className="bg-primary-white/30 absolute top-4 right-4 block -rotate-z-45 rounded-full p-2 transition-all duration-300 lg:hidden"
+                                    aria-label="Acessar descrição do módulo 02"
                                 >
                                     <ArrowRight
                                         size={32}
@@ -158,7 +162,8 @@ export function SectionModules() {
                                     </div>
                                     <Link
                                         href={'/modulo03'}
-                                        className="hover:bg-primary-white/30 rounded-full p-2 transition-all duration-300"
+                                        className="bg-primary-white/30 absolute top-4 right-4 block -rotate-z-45 rounded-full p-2 transition-all duration-300 lg:hidden"
+                                        aria-label="Acessar descrição do módulo 03"
                                     >
                                         <ArrowRight
                                             size={32}
@@ -169,6 +174,7 @@ export function SectionModules() {
                                 <Link
                                     href={'/modulo03'}
                                     className="bg-primary-white/30 absolute top-4 right-4 block -rotate-z-45 rounded-full p-2 transition-all duration-300 lg:hidden"
+                                    aria-label="Acessar descrição do módulo 03"
                                 >
                                     <ArrowRight
                                         size={32}

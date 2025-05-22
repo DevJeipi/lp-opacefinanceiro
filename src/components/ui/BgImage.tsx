@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import fotoBg from '../../../public/velas2.png'
+import fotoBg from '../../../public/velas2.webp'
 
 export function BgImage() {
     return (
