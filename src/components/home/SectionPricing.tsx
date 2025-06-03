@@ -18,18 +18,22 @@ const produtos = [
     },
     {
         nome: 'E-book Renascimento Financeiro',
-        preco: 'R$ 79',
+        preco: 'R$ 37',
     },
     {
         nome: 'E-book Como Começar com Segurança',
-        preco: 'R$ 63',
+        preco: 'R$ 27',
     },
     {
-        nome: 'Planilha de controle de gastos',
+        nome: 'Planilha de Controle Financeiro',
         preco: 'R$ 56',
     },
     {
-        nome: 'Planilha de portfólio de investimentos',
+        nome: 'Planilha de Controle de Gastos Simplificada',
+        preco: 'R$ 31',
+    },
+    {
+        nome: 'Planilha de Portfólio de Investimentos',
         preco: 'R$ 61',
     },
     {
@@ -150,7 +154,7 @@ export function SectionPricing() {
                             <div className="font-body mb-4 flex items-end gap-1">
                                 <p className="text-2xl md:text-3xl">Por:</p>
                                 <span className="text-4xl md:text-6xl">
-                                    R$ 197
+                                    R$ 297
                                 </span>
                             </div>
                             <Button color="secondaryorange">
