@@ -14,7 +14,6 @@ export function Footer() {
                         width={40}
                         height={21}
                         alt="Logo do Pace Financeiro"
-                        placeholder="blur"
                         loading="lazy"
                     />
                     <p className="font-body text-primary-white mt-1 text-center md:text-left">
