@@ -33,7 +33,12 @@ export function Button({
             <button
                 className={cn(defaultButtonClasses, colors[color], className)}
             >
-                <Link href={'#'}>{children}</Link>
+                <Link
+                    href={'https://pay.hotmart.com/K99772326B?checkoutMode=10'}
+                    aria-label="Acessar checkout de compra do curso"
+                >
+                    {children}
+                </Link>
             </button>
             <span
                 className={cn(

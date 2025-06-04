@@ -13,8 +13,12 @@ import { CheckCircle2, XCircle } from 'lucide-react'
 // Lista de produtos
 const produtos = [
     {
-        nome: 'Curso Do Cheque Especial à Independência Financeira',
+        nome: 'Curso - Do Cheque Especial à Independência Financeira',
         preco: 'R$ 1187',
+    },
+    {
+        nome: 'Curso Pocket - Investimentos em Fundos ETF',
+        preco: 'R$ 89',
     },
     {
         nome: 'E-book Renascimento Financeiro',
@@ -38,7 +42,7 @@ const produtos = [
     },
     {
         nome: '4 artigos exclusivos',
-        preco: 'R$ 82',
+        preco: 'R$ 72',
     },
 ]
 
@@ -148,7 +152,7 @@ export function SectionPricing() {
                             <div className="font-body text-secondary-orange flex items-end gap-1 font-normal">
                                 <p className="md:text-xl">De:</p>
                                 <span className="text-2xl line-through md:text-4xl">
-                                    R$ 1.528
+                                    R$ 1.560
                                 </span>
                             </div>
                             <div className="font-body mb-4 flex items-end gap-1">
