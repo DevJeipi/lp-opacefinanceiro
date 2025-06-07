@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/buttonCarousel'
 import { GridContainer } from '@/components/ui/GridContainer'
 import { Pin, Target, Landmark, Brain, Rocket } from 'lucide-react'
 

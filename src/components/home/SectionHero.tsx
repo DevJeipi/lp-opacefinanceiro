@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import fotoOtavio from '../../../public/foto-otavio-17-removebg.webp'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/buttonCarousel'
 import { GridContainer } from '@/components/ui/GridContainer'
 import { BgImage } from '@/components/ui/BgImage'
 import { Header } from '@/components/header'
