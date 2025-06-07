@@ -1,5 +1,5 @@
 import { GridContainer } from '@/components/ui/GridContainer'
-import { Button } from '@/components/ui/buttonCarousel'
+import { Button } from '@/components/ui/button'
 import { Footer } from '@/components/footer'
 import Link from 'next/link'
 import { ArrowLeft, ArrowDown } from 'lucide-react'
