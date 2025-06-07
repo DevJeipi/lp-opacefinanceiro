@@ -7,7 +7,7 @@ import {
     CardTitle,
 } from '@/components/ui/card'
 import { GridContainer } from '@/components/ui/GridContainer'
-import { Button } from '@/components/ui/buttonCarousel'
+import { Button } from '@/components/ui/button'
 import { CheckCircle2, XCircle } from 'lucide-react'
 
 // Lista de produtos

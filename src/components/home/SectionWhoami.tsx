@@ -3,7 +3,7 @@ import fotoOtavio2 from '../../../public/foto-otavio-9.webp'
 import { GridContainer } from '@/components/ui/GridContainer'
 import { Quote } from '@/components/ui/quote'
 import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/buttonCarousel'
+import { Button } from '@/components/ui/button'
 import iconCheck from '../../../public/icon-pacefinanceiro.webp'
 
 export function SectionWhoami() {

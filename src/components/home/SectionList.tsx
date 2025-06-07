@@ -1,5 +1,5 @@
 import { GridContainer } from '@/components/ui/GridContainer'
-import { Button } from '@/components/ui/buttonCarousel'
+import { Button } from '@/components/ui/button'
 import {
     CalendarCheck,
     ChartLine,
