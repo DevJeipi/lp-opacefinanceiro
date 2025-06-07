@@ -22,38 +22,31 @@ import {
     Table,
     TrendingUp,
 } from 'lucide-react'
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from '@/components/ui/carousel'
-
-export const cards = [
-    {
-        title: 'Sonhadores presos no vermelho',
-        description:
-            'Que querem quebrar as correntes das dívidas e conquistar uma vida livre com um plano que funciona de verdade!',
-    },
-    {
-        title: 'Construtores de um futuro seguro',
-        description:
-            'Que desejam erguer uma muralha financeira imbatível e dormir tranquilos como nunca!',
-    },
-    {
-        title: 'Aventureiros da liberdade financeira',
-        description:
-            'Que querem viver seus sonhos sem estresse e com estratégias que te levarão ao topo!',
-    },
-    {
-        title: 'Aprendizes corajosos do dinheiro',
-        description:
-            'Iniciantes que anseiam transformar cada real em uma futuro promissor com o melhor e-book de finanças!',
-    },
-]
 
 export default function Ebook02() {
+    export const cards = [
+        {
+            title: 'Sonhadores presos no vermelho',
+            description:
+                'Que querem quebrar as correntes das dívidas e conquistar uma vida livre com um plano que funciona de verdade!',
+        },
+        {
+            title: 'Construtores de um futuro seguro',
+            description:
+                'Que desejam erguer uma muralha financeira imbatível e dormir tranquilos como nunca!',
+        },
+        {
+            title: 'Aventureiros da liberdade financeira',
+            description:
+                'Que querem viver seus sonhos sem estresse e com estratégias que te levarão ao topo!',
+        },
+        {
+            title: 'Aprendizes corajosos do dinheiro',
+            description:
+                'Iniciantes que anseiam transformar cada real em uma futuro promissor com o melhor e-book de finanças!',
+        },
+    ]
+
     return (
         <>
             <section className="relative h-[95vh] border-b-1 border-gray-600">
@@ -376,19 +369,6 @@ export default function Ebook02() {
                                 </div>
                             ))}
                         </div>
-
-                        <Carousel className="block w-full lg:hidden">
-                            <CarouselContent>
-                                <CarouselItem>
-                                    <h2>Sonhadores presos no vermelho</h2>
-                                </CarouselItem>
-                                <CarouselItem>...</CarouselItem>
-                                <CarouselItem>...</CarouselItem>
-                                <CarouselItem>...</CarouselItem>
-                            </CarouselContent>
-                            <CarouselPrevious />
-                            <CarouselNext />
-                        </Carousel>
                     </GridContainer>
                 </Pattern>
             </section>
