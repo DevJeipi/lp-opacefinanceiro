@@ -24,7 +24,7 @@ import {
 } from 'lucide-react'
 
 export default function Ebook02() {
-    export const cards = [
+    const cards = [
         {
             title: 'Sonhadores presos no vermelho',
             description:
