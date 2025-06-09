@@ -25,6 +25,9 @@ export const metadata: Metadata = {
             'Aprenda a investir sem riscos utilizando o método Pace Financeiro, e adquira sua independência financeira.',
         images: ['https://opacefinanceiro.com.br/velas2.webp'],
     },
+    verification: {
+        google: 'F4PQfnmTddvBGg9T9vGcGnZy9vdkKYL56Q0t3UZNhB8',
+    },
     robots: {
         index: true,
         follow: true,
