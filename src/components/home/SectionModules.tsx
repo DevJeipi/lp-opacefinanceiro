@@ -80,6 +80,7 @@ export function SectionModules() {
                                 </Link>
                             </div>
                         </li>
+
                         <li className="flex flex-col items-center justify-center text-left md:px-16 lg:px-0">
                             <span className="font-heading text-primary-blue w-full font-bold lg:pl-4 lg:text-xl">
                                 02
@@ -131,6 +132,7 @@ export function SectionModules() {
                                 </Link>
                             </div>
                         </li>
+
                         <li className="flex flex-col items-center justify-center text-left md:px-16 lg:px-0">
                             <span className="font-heading text-primary-blue w-full font-bold lg:pl-4 lg:text-xl">
                                 03
@@ -162,8 +164,8 @@ export function SectionModules() {
                                     </div>
                                     <Link
                                         href={'/modulo03'}
-                                        className="bg-primary-white/30 absolute top-4 right-4 block -rotate-z-45 rounded-full p-2 transition-all duration-300 lg:hidden"
-                                        aria-label="Acessar descrição do módulo 03"
+                                        className="hover:bg-primary-white/30 rounded-full p-2 transition-all duration-300"
+                                        aria-label="Acessar descrição do módulo 02"
                                     >
                                         <ArrowRight
                                             size={32}
@@ -174,7 +176,7 @@ export function SectionModules() {
                                 <Link
                                     href={'/modulo03'}
                                     className="bg-primary-white/30 absolute top-4 right-4 block -rotate-z-45 rounded-full p-2 transition-all duration-300 lg:hidden"
-                                    aria-label="Acessar descrição do módulo 03"
+                                    aria-label="Acessar descrição do módulo 02"
                                 >
                                     <ArrowRight
                                         size={32}
