@@ -5,25 +5,28 @@ import { Metadata } from 'next'
 
 // Metadata for SEO
 export const metadata: Metadata = {
-    title: 'Pace Financeiro | Invista com segurança',
+    title: 'Curso Do Cheque Especial à Independência Financeira',
     description:
         'Aprenda a investir sem riscos utilizando o método Pace Financeiro, e adquira sua independência financeira.',
+    alternates: {
+        canonical: 'https://opacefinanceiro.com.br',
+    },
     openGraph: {
         title: 'O Pace Financeiro | Invista com segurança',
         description:
             'Aprenda a investir sem riscos utilizando o método Pace Financeiro, e adquira sua independência financeira.',
-        url: 'https://opacefinanceiro.com.br', // Altere para seu domínio real
+        url: 'https://opacefinanceiro.com.br',
         siteName: 'Pace Financeiro',
-        images: ['/velas2.webp'],
+        images: ['https://opacefinanceiro.com.br/open-graph-image.png'],
         locale: 'pt_BR',
         type: 'website',
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Pace Financeiro | Invista com segurança',
+        title: 'Curso Do Cheque Especial à Independência Financeira',
         description:
             'Aprenda a investir sem riscos utilizando o método Pace Financeiro, e adquira sua independência financeira.',
-        images: ['https://opacefinanceiro.com.br/velas2.webp'],
+        images: ['https://opacefinanceiro.com.br/open-graph-image.png'],
     },
     verification: {
         google: 'F4PQfnmTddvBGg9T9vGcGnZy9vdkKYL56Q0t3UZNhB8',
@@ -69,6 +72,27 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode
 }>) {
+    const productStructuredData = {
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        name: 'Curso Do Cheque Especial à Independência Financeira',
+        description:
+            'Aprenda a investir sem riscos utilizando o método Pace Financeiro, e adquira sua independência financeira.',
+        image: 'https://opacefinanceiro.com.br/open-graph-image.png', // Imagem principal do produto
+        brand: {
+            '@type': 'Brand',
+            name: 'O Pàce Financeiro',
+        },
+        offers: {
+            '@type': 'Offer',
+            url: 'https://opacefinanceiro.com.br',
+            priceCurrency: 'BRL',
+            price: '297.00', // Preço do produto
+            itemCondition: 'https://schema.org/NewCondition',
+            availability: 'https://schema.org/InStock',
+        },
+    }
+
     return (
         <html lang="pt-br" dir="ltr">
             <body

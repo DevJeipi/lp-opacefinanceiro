@@ -3,6 +3,28 @@ import { Button } from '@/components/ui/button'
 import { Footer } from '@/components/footer'
 import Link from 'next/link'
 import { ArrowLeft, ArrowDown } from 'lucide-react'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Curso Do Cheque Especial à Independência Financeira | Módulo 02',
+    description:
+        'Conheça mais a fundo as aulas que serão oferecidas no módulo 02 do curso.',
+    alternates: {
+        canonical: 'https://opacefinanceiro.com.br/modulo02',
+    },
+
+    openGraph: {
+        title: 'Sobre o módulo 02 do Curso Do Cheque Especial à Independência Financeira',
+        description:
+            'Conheça mais a fundo as aulas que serão oferecidas no módulo 02 do curso.',
+        url: 'https://opacefinanceiro.com.br/modulo02',
+    },
+
+    robots: {
+        index: false,
+        follow: true,
+    },
+}
 
 const aulas = [
     {
