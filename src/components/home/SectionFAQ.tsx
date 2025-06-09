@@ -85,6 +85,19 @@ export function SectionFAQ() {
                                 sem enrolação.
                             </AccordionContent>
                         </AccordionItem>
+
+                        <AccordionItem value="item-5">
+                            <AccordionTrigger>
+                                As aulas são gravadas ou ao vivo?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                                Todas as aulas são gravadas! Permitindo você a
+                                assisti-las quando quiser e no seu ritmo. Além
+                                de que você terá acesso vitalício ao curso,
+                                podendo revisitar o conteúdo sempre que
+                                precisar.
+                            </AccordionContent>
+                        </AccordionItem>
                     </Accordion>
                 </GridContainer>
             </div>

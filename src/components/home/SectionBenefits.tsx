@@ -49,7 +49,7 @@ export function SectionBenefits() {
                         <ul className="flex flex-col gap-4 text-left font-bold">
                             <li className="bg-primary-white flex items-center justify-start gap-3 rounded-full px-3 py-2">
                                 <BadgeCheck color="var(--color-primary-orange)" />
-                                <p>+20 horas de conteúdo</p>
+                                <p>+12 horas de conteúdo</p>
                             </li>
                             <li className="bg-primary-white flex items-center justify-start gap-3 rounded-full px-3 py-2">
                                 <BadgeCheck color="var(--color-primary-orange)" />
@@ -57,7 +57,7 @@ export function SectionBenefits() {
                             </li>
                             <li className="bg-primary-white flex items-center justify-start gap-3 rounded-full px-3 py-2">
                                 <BadgeCheck color="var(--color-primary-orange)" />
-                                <p>38 aulas em vídeo</p>
+                                <p>38 aulas gravadas</p>
                             </li>
                             <li className="bg-primary-white flex items-center justify-start gap-3 rounded-full px-3 py-2">
                                 <BadgeCheck color="var(--color-primary-orange)" />

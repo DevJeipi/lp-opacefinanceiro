@@ -7,7 +7,7 @@ import { Header } from '@/components/header'
 
 export function SectionHero() {
     return (
-        <section className="relative">
+        <section className="bg-primary-blue relative -z-30">
             <Header />
             <BgImage />
             <div className="relative flex h-80 w-full items-center justify-center md:h-120">
