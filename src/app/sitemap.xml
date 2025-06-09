@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://opacefinanceiro.com.br/</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Módulo 01 -->
+  <url>
+    <loc>https://opacefinanceiro.com.br/modulo01</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Módulo 02 -->
+  <url>
+    <loc>https://opacefinanceiro.com.br/modulo02</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Módulo 03 -->
+  <url>
+    <loc>https://opacefinanceiro.com.br/modulo03</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
