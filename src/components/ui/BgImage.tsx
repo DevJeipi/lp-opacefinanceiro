@@ -13,6 +13,7 @@ export function BgImage() {
                     placeholder="blur"
                     className="bg-cover bg-center bg-no-repeat"
                     priority
+                    fetchPriority="high"
                 />
             </div>
             <div className="bg-primary-blue/40 absolute inset-0 -z-10" />
