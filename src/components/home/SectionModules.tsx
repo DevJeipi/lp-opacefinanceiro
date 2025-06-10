@@ -47,7 +47,7 @@ export function SectionModules() {
                                     alt="Foto decorativa do Módulo 01"
                                     loading="lazy"
                                     placeholder="blur"
-                                    className="rounded-3xl transition-transform duration-500 ease-in-out group-hover:scale-105"
+                                    className="h-full w-full rounded-3xl transition-transform duration-500 ease-in-out group-hover:scale-105"
                                 />
                                 <div className="bg-primary-black/80 absolute inset-0 flex flex-row items-end justify-start rounded-3xl px-6 py-6 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                                     <div className="flex flex-col items-start justify-end">
@@ -94,10 +94,10 @@ export function SectionModules() {
                             <div className="group relative cursor-pointer overflow-hidden rounded-3xl">
                                 <Image
                                     src={module2}
-                                    alt="Foto decorativa do Módulo 01"
+                                    alt="Foto decorativa do Módulo 02"
                                     loading="lazy"
                                     placeholder="blur"
-                                    className="rounded-3xl transition-transform duration-500 ease-in-out group-hover:scale-105"
+                                    className="h-full w-full rounded-3xl transition-transform duration-500 ease-in-out group-hover:scale-105"
                                 />
                                 <div className="bg-primary-black/80 absolute inset-0 flex flex-row items-end justify-start rounded-3xl px-6 py-6 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                                     <div className="flex flex-col items-start justify-end">
@@ -146,10 +146,10 @@ export function SectionModules() {
                             <div className="group relative cursor-pointer overflow-hidden rounded-3xl">
                                 <Image
                                     src={module3}
-                                    alt="Foto decorativa do Módulo 01"
+                                    alt="Foto decorativa do Módulo 03"
                                     loading="lazy"
                                     placeholder="blur"
-                                    className="rounded-3xl transition-transform duration-500 ease-in-out group-hover:scale-105"
+                                    className="h-full w-full rounded-3xl transition-transform duration-500 ease-in-out group-hover:scale-105"
                                 />
                                 <div className="bg-primary-black/80 absolute inset-0 flex flex-row items-end justify-start rounded-3xl px-6 py-6 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                                     <div className="flex flex-col items-start justify-end">

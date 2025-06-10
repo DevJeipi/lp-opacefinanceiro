@@ -17,7 +17,14 @@ export const metadata: Metadata = {
             'Aprenda a investir sem riscos utilizando o método Pace Financeiro, e adquira sua independência financeira.',
         url: 'https://opacefinanceiro.com.br',
         siteName: 'Pace Financeiro',
-        images: ['https://opacefinanceiro.com.br/open-graph-image.png'],
+        images: [
+            {
+                url: 'https://opacefinanceiro.com.br/open-graph-image.webp',
+                width: 1200,
+                height: 630,
+                alt: 'Pace Financeiro - Independência Financeira',
+            },
+        ],
         locale: 'pt_BR',
         type: 'website',
     },
@@ -26,7 +33,14 @@ export const metadata: Metadata = {
         title: 'Curso Do Cheque Especial à Independência Financeira',
         description:
             'Aprenda a investir sem riscos utilizando o método Pace Financeiro, e adquira sua independência financeira.',
-        images: ['https://opacefinanceiro.com.br/open-graph-image.png'],
+        images: [
+            {
+                url: 'https://opacefinanceiro.com.br/open-graph-image.webp',
+                width: 1200,
+                height: 630,
+                alt: 'Pace Financeiro - Independência Financeira',
+            },
+        ],
     },
     verification: {
         google: 'F4PQfnmTddvBGg9T9vGcGnZy9vdkKYL56Q0t3UZNhB8',
@@ -48,6 +62,8 @@ const lato = Lato({
     subsets: ['latin'],
     display: 'swap',
     variable: '--font-lato',
+    preload: true,
+    fallback: ['system-ui', 'arial'],
 })
 
 const conquera = localFont({
@@ -65,6 +81,8 @@ const conquera = localFont({
     ],
     variable: '--font-conquera',
     display: 'swap',
+    preload: true,
+    fallback: ['Georgia', 'serif'],
 })
 
 export default function RootLayout({
@@ -74,6 +92,21 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="pt-br" dir="ltr">
+            <head>
+                {/* Preload de recursos críticos */}
+                <link
+                    rel="preload"
+                    href="/imagemdefundologin.webp"
+                    as="image"
+                    type="image/webp"
+                />
+                <link
+                    rel="preload"
+                    href="/foto-otavio-17-removebg.webp"
+                    as="image"
+                    type="image/webp"
+                />
+            </head>
             <body
                 className={`${lato.variable} ${conquera.variable} antialiased`}
             >

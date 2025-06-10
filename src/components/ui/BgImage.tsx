@@ -9,11 +9,9 @@ export function BgImage() {
                     src={fotoBg}
                     alt="Gráfico de fundo"
                     fill
-                    style={{ objectFit: 'cover' }}
                     placeholder="blur"
-                    className="bg-cover bg-center bg-no-repeat"
-                    priority
-                    fetchPriority="high"
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                 />
             </div>
             <div className="bg-primary-blue/40 absolute inset-0 -z-10" />
