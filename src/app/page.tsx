@@ -1,14 +1,41 @@
-import { SectionHero } from '@/components/home/SectionHero'
-import { SectionPersuasive } from '@/components/home/SectionPersuasive'
-import { SectionBenefits } from '@/components/home/SectionBenefits'
-import { SectionMini } from '@/components/home/SectionMini'
-import { SectionWhoami } from '@/components/home/SectionWhoami'
-import { SectionList } from '@/components/home/SectionList'
-import { SectionPricing } from '@/components/home/SectionPricing'
-import { SectionModules } from '@/components/home/SectionModules'
-import { SectionGuarantee } from '@/components/home/SectionGuarantee'
-import { SectionFAQ } from '@/components/home/SectionFAQ'
-import { Footer } from '@/components/footer'
+import dynamic from 'next/dynamic'
+
+const SectionHero = dynamic(
+    async () => (await import('@/components/home/SectionHero')).SectionHero
+)
+const SectionPersuasive = dynamic(
+    async () =>
+        (await import('@/components/home/SectionPersuasive')).SectionPersuasive
+)
+const SectionBenefits = dynamic(
+    async () =>
+        (await import('@/components/home/SectionBenefits')).SectionBenefits
+)
+const SectionMini = dynamic(
+    async () => (await import('@/components/home/SectionMini')).SectionMini
+)
+const SectionWhoami = dynamic(
+    async () => (await import('@/components/home/SectionWhoami')).SectionWhoami
+)
+const SectionList = dynamic(
+    async () => (await import('@/components/home/SectionList')).SectionList
+)
+const SectionPricing = dynamic(
+    async () =>
+        (await import('@/components/home/SectionPricing')).SectionPricing
+)
+const SectionModules = dynamic(
+    async () =>
+        (await import('@/components/home/SectionModules')).SectionModules
+)
+const SectionGuarantee = dynamic(
+    async () =>
+        (await import('@/components/home/SectionGuarantee')).SectionGuarantee
+)
+const SectionFAQ = dynamic(
+    async () => (await import('@/components/home/SectionFAQ')).SectionFAQ
+)
+const Footer = dynamic(async () => (await import('@/components/footer')).Footer)
 
 import { GoogleTagManager } from '@next/third-parties/google'
 
