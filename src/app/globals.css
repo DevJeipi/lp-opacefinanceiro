@@ -9,7 +9,6 @@
         background: linear-gradient(to top, #cb3233 0%, #f05824 100%);
         background-size: 100% 200%;
         background-repeat: repeat-y;
-        animation: gradient-move 4s linear infinite;
     }
 
     .bg-gradient-hero {
@@ -25,25 +24,9 @@
         background: linear-gradient(to top, #cb3233 0%, #f05824 100%);
         background-size: 100% 200%;
         background-repeat: repeat-y;
-        animation: gradient-move 4s linear infinite;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         display: inline-block;
-    }
-}
-
-/****ANIMATIONS****/
-@keyframes gradient-move {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    50% {
-        background-position: 0% 100%;
-    }
-
-    100% {
-        background-position: 0% 0%;
     }
 }
 
