@@ -11,10 +11,11 @@ export function BgImage() {
                     fill
                     style={{ objectFit: 'cover' }}
                     placeholder="blur"
-                    className="bg-cover bg-center bg-no-repeat opacity-60"
+                    className="bg-cover bg-center bg-no-repeat"
                     priority
                 />
             </div>
+            <div className="bg-primary-blue/40 absolute inset-0 -z-10" />
         </>
     )
 }

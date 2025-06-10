@@ -22,7 +22,7 @@ const produtos = [
     },
     {
         nome: 'E-book Renascimento Financeiro',
-        preco: 'R$ 37',
+        preco: 'R$ 17',
     },
     {
         nome: 'E-book Como Começar com Segurança',
