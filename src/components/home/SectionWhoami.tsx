@@ -30,10 +30,10 @@ export function SectionWhoami() {
                 <div className="flex flex-col items-center justify-center gap-4 md:items-start">
                     <Badge>Otávio Daudt</Badge>
                     <Quote>
-                        "Não sou guru. Sou planejador financeiro com 25 anos de
-                        mercado. Já atendi desde famílias endividadas até
-                        empresários. E vi que todos têm algo em comum: a falta
-                        de um plano simples, aplicável, e honesto."
+                        &quot;Não sou guru. Sou planejador financeiro com 25
+                        anos de mercado. Já atendi desde famílias endividadas
+                        até empresários. E vi que todos têm algo em comum: a
+                        falta de um plano simples, aplicável, e honesto.&quot;
                     </Quote>
                     <ul className="flex w-full flex-col gap-2">
                         {achievements.map((text, i) => (

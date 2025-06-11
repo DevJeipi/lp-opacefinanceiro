@@ -1,11 +1,4 @@
-import type { NextConfig } from 'next'
-import withBundleAnalyzer from '@next/bundle-analyzer'
-
-const withAnalyzer = withBundleAnalyzer({
-    enabled: process.env.ANALYZE === 'true',
-})
-
-const nextConfig: NextConfig = {
+const nextConfig = {
     // Otimização de imagens
     images: {
         formats: ['image/webp', 'image/avif'],
@@ -19,9 +12,6 @@ const nextConfig: NextConfig = {
 
     // Compressão
     compress: true,
-
-    // Otimização de build
-    swcMinify: true,
 
     // Headers de cache
     async headers() {
@@ -58,9 +48,7 @@ const nextConfig: NextConfig = {
     // Experimental features para performance
     experimental: {
         optimizeCss: true,
-        craCompat: true,
-        optimizePackageImports: ['lucide-react', 'react-icons'],
     },
 }
 
-export default withAnalyzer(nextConfig)
+export default nextConfig
