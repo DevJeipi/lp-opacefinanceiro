@@ -67,12 +67,12 @@ const lato = Lato({
 const conquera = localFont({
     src: [
         {
-            path: 'fonts/Conquera-Bold.woff2',
+            path: '../../public/fonts/Conquera-Bold.woff2',
             weight: '700',
             style: 'normal',
         },
         {
-            path: 'fonts/Conquera-Medium.woff2',
+            path: '../../public/fonts/Conquera-Medium.woff2',
             weight: '500',
             style: 'normal',
         },
