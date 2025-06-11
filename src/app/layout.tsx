@@ -62,8 +62,6 @@ const lato = Lato({
     subsets: ['latin'],
     display: 'swap',
     variable: '--font-lato',
-    preload: true,
-    fallback: ['system-ui', 'arial'],
 })
 
 const conquera = localFont({
@@ -81,8 +79,6 @@ const conquera = localFont({
     ],
     variable: '--font-conquera',
     display: 'swap',
-    preload: true,
-    fallback: ['Georgia', 'serif'],
 })
 
 export default function RootLayout({
