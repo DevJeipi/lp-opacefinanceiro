@@ -1,6 +1,4 @@
 import './globals.css'
-import { Lato } from 'next/font/google'
-import localFont from 'next/font/local'
 import { Metadata } from 'next'
 
 // Metadata for SEO
@@ -56,31 +54,6 @@ export const metadata: Metadata = {
     },
 }
 
-// Importing fonts
-const lato = Lato({
-    weight: ['400', '700'],
-    subsets: ['latin'],
-    display: 'swap',
-    variable: '--font-lato',
-})
-
-const conquera = localFont({
-    src: [
-        {
-            path: '../../public/fonts/Conquera-Bold.woff',
-            weight: '700',
-            style: 'normal',
-        },
-        {
-            path: '../../public/fonts/Conquera-Medium.woff',
-            weight: '500',
-            style: 'normal',
-        },
-    ],
-    variable: '--font-conquera',
-    display: 'swap',
-})
-
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -88,26 +61,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="pt-br" dir="ltr">
-            <head>
-                {/* Preload de recursos críticos */}
-                <link
-                    rel="preload"
-                    href="/imagemdefundologin.webp"
-                    as="image"
-                    type="image/webp"
-                />
-                <link
-                    rel="preload"
-                    href="/foto-otavio-17-removebg.webp"
-                    as="image"
-                    type="image/webp"
-                />
-            </head>
-            <body
-                className={`${lato.variable} ${conquera.variable} antialiased`}
-            >
-                {children}
-            </body>
+            <body className={`antialiased`}>{children}</body>
         </html>
     )
 }

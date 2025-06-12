@@ -1,5 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
+
+/****FONTS****/
+@font-face {
+    font-family: 'Conquera';
+    src: url('/fonts/Conquera-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Conquera';
+    src: url('/fonts/Conquera-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 
 @custom-variant dark (&:is(.dark *));
 
@@ -31,6 +49,10 @@
 }
 
 /****STYLE VARIABLES****/
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 @theme {
     --breakpoint-xs: 384px;
     --breakpoint-sm: 480px;
