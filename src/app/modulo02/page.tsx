@@ -123,7 +123,7 @@ export default function Modulo02() {
     return (
         <>
             <section className="bg-primary-blue">
-                <GridContainer>
+                <GridContainer className="flex flex-col items-center justify-center gap-8">
                     <div className="flex w-full items-center gap-4 text-left">
                         <Link
                             href={'/'}
@@ -137,6 +137,23 @@ export default function Modulo02() {
                         <h1 className="text-primary-white font-body text-xl font-bold">
                             Módulo 02 - Descomplicando o Mercado Financeiro
                         </h1>
+                    </div>
+                    <div className="flex flex-col items-center justify-center gap-4">
+                        <h2 className="text-primary-white font-body text-center text-3xl font-bold">
+                            Receba um pequeno SPOILER de alguma das aulas...
+                        </h2>
+                        <video
+                            width="600"
+                            height="450"
+                            controls
+                            preload="metadata"
+                        >
+                            <source
+                                src="/modulo02-corte-lp-opacefinanceiro.mp4"
+                                type="video/mp4"
+                            />
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
                     </div>
                     <ul className="mt-8 flex flex-col gap-4">
                         {aulas.map((aula, index) => (
