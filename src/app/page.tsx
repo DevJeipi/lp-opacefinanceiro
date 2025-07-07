@@ -1,3 +1,15 @@
+'use client'
+
+import { Suspense } from 'react'
+import {
+    HeroSectionSkeleton,
+    PersuasiveSectionSkeleton,
+    BenefitsSectionSkeleton,
+    WhoamiSectionSkeleton,
+    ListSectionSkeleton,
+    PricingSectionSkeleton,
+    GuaranteeSectionSkeleton,
+} from '@/components/ui/skeleton-loader'
 import dynamic from 'next/dynamic'
 
 const SectionHero = dynamic(
@@ -43,17 +55,31 @@ export default function Home() {
     return (
         <div className="flex min-h-screen flex-col overflow-hidden">
             <main className="flex-1">
-                <SectionHero />
-                <SectionPersuasive />
+                <Suspense fallback={<HeroSectionSkeleton />}>
+                    <SectionHero />
+                </Suspense>
+                <Suspense fallback={<PersuasiveSectionSkeleton />}>
+                    <SectionPersuasive />
+                </Suspense>
                 <div className="bg-gradient-animated">
-                    <SectionBenefits />
+                    <Suspense fallback={<BenefitsSectionSkeleton />}>
+                        <SectionBenefits />
+                    </Suspense>
                     <SectionMini />
-                    <SectionWhoami />
+                    <Suspense fallback={<WhoamiSectionSkeleton />}>
+                        <SectionWhoami />
+                    </Suspense>
                 </div>
-                <SectionList />
-                <SectionPricing />
+                <Suspense fallback={<ListSectionSkeleton />}>
+                    <SectionList />
+                </Suspense>
+                <Suspense fallback={<PricingSectionSkeleton />}>
+                    <SectionPricing />
+                </Suspense>
                 <SectionModules />
-                <SectionGuarantee />
+                <Suspense fallback={<GuaranteeSectionSkeleton />}>
+                    <SectionGuarantee />
+                </Suspense>
                 <SectionFAQ />
             </main>
             <Footer />
