@@ -2,14 +2,21 @@ import Image from 'next/image'
 import fotoOtavio from '../../../public/foto-otavio-17-removebg.webp'
 import { Button } from '@/components/ui/button'
 import { GridContainer } from '@/components/ui/GridContainer'
-import { BgImage } from '@/components/ui/BgImage'
 import { Header } from '@/components/header'
 
 export function SectionHero() {
     return (
         <section className="relative">
             <Header />
-            <BgImage />
+            <div className="absolute inset-0 -z-20">
+                <img
+                    src="/imagemdefundologin.webp"
+                    alt="Gráfico de fundo"
+                    className="h-full w-full object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                />
+            </div>
+            <div className="bg-primary-blue/40 absolute inset-0 -z-10" />s
             <div className="relative flex h-80 w-full items-center justify-center md:h-120">
                 <Image
                     src={fotoOtavio}
