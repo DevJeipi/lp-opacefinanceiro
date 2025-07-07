@@ -1,7 +1,7 @@
 import { Badge } from '@/components/ui/badge'
 import { GridContainer } from '@/components/ui/GridContainer'
 import { Button } from '@/components/ui/button'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Lock, LockOpen } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import module1 from '../../../public/modulo01-img.webp'
@@ -58,7 +58,7 @@ export function SectionModules() {
                                         </p>
                                     </div>
                                     <Link
-                                        href={'/modulo01'}
+                                        href={'/module01'}
                                         className="hover:bg-primary-white/30 rounded-full p-2 transition-all duration-300"
                                         aria-label="Acessar descrição do módulo 01"
                                     >
@@ -69,7 +69,7 @@ export function SectionModules() {
                                     </Link>
                                 </div>
                                 <Link
-                                    href={'/modulo01'}
+                                    href={'/module01'}
                                     className="bg-primary-white/30 absolute top-4 right-4 block -rotate-z-45 rounded-full p-2 transition-all duration-300 lg:hidden"
                                     aria-label="Acessar descrição do módulo 01"
                                 >
@@ -110,7 +110,7 @@ export function SectionModules() {
                                         </p>
                                     </div>
                                     <Link
-                                        href={'/modulo02'}
+                                        href={'/module02'}
                                         className="hover:bg-primary-white/30 rounded-full p-2 transition-all duration-300"
                                         aria-label="Acessar descrição do módulo 02"
                                     >
@@ -121,7 +121,7 @@ export function SectionModules() {
                                     </Link>
                                 </div>
                                 <Link
-                                    href={'/modulo02'}
+                                    href={'/module02'}
                                     className="bg-primary-white/30 absolute top-4 right-4 block -rotate-z-45 rounded-full p-2 transition-all duration-300 lg:hidden"
                                     aria-label="Acessar descrição do módulo 02"
                                 >
@@ -163,7 +163,7 @@ export function SectionModules() {
                                         </p>
                                     </div>
                                     <Link
-                                        href={'/modulo03'}
+                                        href={'/module03'}
                                         className="hover:bg-primary-white/30 rounded-full p-2 transition-all duration-300"
                                         aria-label="Acessar descrição do módulo 02"
                                     >
@@ -174,7 +174,7 @@ export function SectionModules() {
                                     </Link>
                                 </div>
                                 <Link
-                                    href={'/modulo03'}
+                                    href={'/module03'}
                                     className="bg-primary-white/30 absolute top-4 right-4 block -rotate-z-45 rounded-full p-2 transition-all duration-300 lg:hidden"
                                     aria-label="Acessar descrição do módulo 02"
                                 >
@@ -186,6 +186,20 @@ export function SectionModules() {
                             </div>
                         </li>
                     </ul>
+                </div>
+                <div className="flex w-full flex-col items-center justify-center gap-4">
+                    <div className="flex w-full items-center justify-center gap-2 rounded-xl bg-gray-200 py-4 text-2xl">
+                        <LockOpen />
+                        <span>Módulo 01</span>
+                    </div>
+                    <div className="flex w-full items-center justify-center gap-2 rounded-xl bg-gray-200 py-4 text-2xl">
+                        <Lock />
+                        <span>Módulo 02</span>
+                    </div>
+                    <div className="flex w-full items-center justify-center gap-2 rounded-xl bg-gray-200 py-4 text-2xl">
+                        <Lock />
+                        <span>Módulo 03</span>
+                    </div>
                 </div>
                 <Button>Investir em meu futuro</Button>
             </GridContainer>

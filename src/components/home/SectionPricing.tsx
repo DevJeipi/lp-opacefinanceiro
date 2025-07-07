@@ -8,7 +8,7 @@ import {
 } from '@/components/ui/card'
 import { GridContainer } from '@/components/ui/GridContainer'
 import { Button } from '@/components/ui/button'
-import { CheckCircle2, XCircle } from 'lucide-react'
+import { CheckCircle2, XCircle, ClockAlert } from 'lucide-react'
 
 // Lista de produtos
 const produtos = [
@@ -157,8 +157,21 @@ export function SectionPricing() {
                             </div>
                             <div className="font-body mb-4 flex items-end gap-1">
                                 <p className="text-2xl md:text-3xl">Por:</p>
-                                <span className="text-4xl md:text-6xl">
+                                <span className="text-4xl line-through md:text-6xl">
                                     R$ 297
+                                </span>
+                            </div>
+                            {/* Oportunidade por tempo limitado */}
+                            <div className="bg-primary-white text-primary-orange font-body my-4 flex flex-col items-center justify-center rounded-xl p-4 font-bold">
+                                <span className="font-heading text-2xl">
+                                    IMPERDÍVEL!
+                                </span>
+                                <span className="my-4 rotate-5 text-7xl">
+                                    R$ 97
+                                </span>
+                                <span className="flex gap-2">
+                                    <ClockAlert />
+                                    OPORTUNIDADE POR TEMPO LIMITADO
                                 </span>
                             </div>
                             <Button color="secondaryorange">
