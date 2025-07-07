@@ -1,6 +1,5 @@
 'use client'
 
-import { BgImageEbook } from '@/components/ui/BgImageEbook'
 import { Button } from '@/components/ui/button'
 import { GridContainer } from '@/components/ui/GridContainer'
 import { Line } from '@/components/ui/line'
@@ -49,7 +48,6 @@ export default function Ebook02() {
     return (
         <>
             <section className="relative h-[95vh] border-b-1 border-gray-600">
-                <BgImageEbook />
                 <GridContainer className="relative flex h-full flex-col items-center">
                     <Image
                         src={fotoLogo}
