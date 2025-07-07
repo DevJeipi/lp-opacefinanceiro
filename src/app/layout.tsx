@@ -1,5 +1,6 @@
 import './globals.css'
 import { Metadata } from 'next'
+import { Lato } from 'next/font/google'
 
 // Metadata for SEO
 export const metadata: Metadata = {
@@ -54,6 +55,14 @@ export const metadata: Metadata = {
     },
 }
 
+const lato = Lato({
+    weight: ['400', '700'],
+    subsets: ['latin'],
+    variable: '--font-body',
+    display: 'swap',
+    preload: true,
+})
+
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -61,7 +70,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="pt-br" dir="ltr">
-            <body className={`antialiased`}>{children}</body>
+            <body className={`${lato.className} antialiased`}>{children}</body>
         </html>
     )
 }

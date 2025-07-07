@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
@@ -49,9 +48,6 @@
 }
 
 /****STYLE VARIABLES****/
-body {
-    font-family: 'Lato', sans-serif;
-}
 
 @theme {
     --breakpoint-xs: 384px;
@@ -60,7 +56,6 @@ body {
     --max-width-container: 87.5rem;
 
     --font-heading: 'Conquera', sans-serif;
-    --font-body: 'Lato', sans-serif;
 
     --color-primary-black: #121212;
     --color-primary-white: #f2f1f2;
