@@ -1,7 +1,7 @@
 import { Badge } from '@/components/ui/badge'
 import { GridContainer } from '@/components/ui/GridContainer'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, Lock, LockOpen } from 'lucide-react'
+import { ArrowRight, CirclePlay, Lock, LockOpen } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import module1 from '../../../public/modulo01-img.webp'
@@ -191,24 +191,38 @@ export function SectionModules() {
                     <div className="flex w-full flex-col items-center justify-center">
                         <div className="flex w-full items-center justify-center gap-2 rounded-xl bg-gray-200 py-4 text-2xl">
                             <LockOpen />
-                            <span>Módulo 01</span>
+                            <span>Módulo 01 - 12 aulas</span>
                         </div>
-                        <div className="flex w-full items-center justify-center gap-2">
-                            <div>Aula 01</div>
-                            <div>Aula 02</div>
-                            <div>Aula 03</div>
-                            <div>Aula 04</div>
-                            <div>Aula 05</div>
-                            <div>Aula 06</div>
+                        <div className="text-primary-white mt-4 flex w-full items-center justify-center gap-2 text-xl">
+                            <div className="flex flex-1 flex-col items-center justify-center rounded-xl bg-gray-700 px-6 py-12">
+                                <CirclePlay size={32} />
+                                Aula 01
+                            </div>
+                            <div className="flex flex-1 flex-col items-center justify-center rounded-xl bg-gray-700 px-6 py-12">
+                                <Lock size={32} />
+                                Aula 02
+                            </div>
+                            <div className="flex flex-1 flex-col items-center justify-center rounded-xl bg-gray-700 px-6 py-12">
+                                <Lock size={32} />
+                                Aula 03
+                            </div>
+                            <div className="flex flex-1 flex-col items-center justify-center rounded-xl bg-gray-700 px-6 py-12">
+                                <Lock size={32} />
+                                Aula 04
+                            </div>
+                            <div className="flex flex-1 flex-col items-center justify-center rounded-xl bg-gray-700 px-6 py-12">
+                                <Lock size={32} />
+                                +8 aulas
+                            </div>
                         </div>
                     </div>
                     <div className="flex w-full items-center justify-center gap-2 rounded-xl bg-gray-200 py-4 text-2xl">
                         <Lock />
-                        <span>Módulo 02</span>
+                        <span>Módulo 02 - 18 aulas</span>
                     </div>
                     <div className="flex w-full items-center justify-center gap-2 rounded-xl bg-gray-200 py-4 text-2xl">
                         <Lock />
-                        <span>Módulo 03</span>
+                        <span>Módulo 03 - 8 aulas</span>
                     </div>
                 </div>
                 <Button>Investir em meu futuro</Button>
