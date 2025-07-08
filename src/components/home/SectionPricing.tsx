@@ -51,10 +51,10 @@ export function SectionPricing() {
         <section className="bg-primary-white">
             <div className="bg-blue-low-op rounded-tl-4xl rounded-br-4xl">
                 <GridContainer className="flex flex-col items-center justify-center gap-12 text-center">
-                    <h1 className="font-heading text-primary-blue flex flex-col font-bold md:text-2xl">
-                        <span className="font-body">Por que este curso é</span>
-                        Diferente de tudo
-                        <span className="font-body">que você já viu?</span>
+                    <h1 className="text-primary-blue flex flex-col font-bold md:text-2xl">
+                        Por que este curso é
+                        <span className="font-heading">Diferente de tudo</span>
+                        que você já viu?
                     </h1>
                     <Card className="border-destructive/40 md:max-w- w-full max-w-md shadow-sm">
                         <CardHeader className="text-center">

@@ -1,16 +1,3 @@
-'use client'
-
-import { Suspense } from 'react'
-import {
-    HeroSectionSkeleton,
-    PersuasiveSectionSkeleton,
-    BenefitsSectionSkeleton,
-    WhoamiSectionSkeleton,
-    ListSectionSkeleton,
-    PricingSectionSkeleton,
-    GuaranteeSectionSkeleton,
-} from '@/components/ui/skeleton-loader'
-
 import { SectionHero } from '@/components/home/SectionHero'
 import { SectionPersuasive } from '@/components/home/SectionPersuasive'
 import { SectionBenefits } from '@/components/home/SectionBenefits'
@@ -29,31 +16,26 @@ export default function Home() {
     return (
         <div className="flex min-h-screen flex-col overflow-hidden">
             <main className="flex-1">
-                <Suspense fallback={<HeroSectionSkeleton />}>
-                    <SectionHero />
-                </Suspense>
-                <Suspense fallback={<PersuasiveSectionSkeleton />}>
-                    <SectionPersuasive />
-                </Suspense>
+                <SectionHero />
+
+                <SectionPersuasive />
+
                 <div className="bg-gradient-animated">
-                    <Suspense fallback={<BenefitsSectionSkeleton />}>
-                        <SectionBenefits />
-                    </Suspense>
+                    <SectionBenefits />
+
                     <SectionMini />
-                    <Suspense fallback={<WhoamiSectionSkeleton />}>
-                        <SectionWhoami />
-                    </Suspense>
+
+                    <SectionWhoami />
                 </div>
-                <Suspense fallback={<ListSectionSkeleton />}>
-                    <SectionList />
-                </Suspense>
-                <Suspense fallback={<PricingSectionSkeleton />}>
-                    <SectionPricing />
-                </Suspense>
+
+                <SectionList />
+
+                <SectionPricing />
+
                 <SectionModules />
-                <Suspense fallback={<GuaranteeSectionSkeleton />}>
-                    <SectionGuarantee />
-                </Suspense>
+
+                <SectionGuarantee />
+
                 <SectionFAQ />
             </main>
             <Footer />

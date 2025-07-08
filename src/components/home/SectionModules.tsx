@@ -23,12 +23,12 @@ export function SectionModules() {
                     className="xs:block absolute top-0 z-0 mt-6 hidden w-80 blur-xs md:w-96"
                     sizes="(max-width: 767px) 320px, 384px"
                 />
-                <h1 className="font-heading text-primary-black z-10 text-center font-bold md:text-2xl">
-                    <span className="font-body md:text-xl">
-                        E se você tivesse todas as ferramentas certas...
-                    </span>
+                <h1 className="text-primary-black z-10 text-center font-bold md:text-xl">
+                    E se você tivesse todas as ferramentas certas...
                     <br />
-                    Nas suas mãos
+                    <span className="font-heading md:text-2xl">
+                        Nas suas mãos
+                    </span>
                 </h1>
                 <div className="flex flex-col items-center justify-center gap-4">
                     <Badge variant={'outline'}>Veja os módulos</Badge>
@@ -188,9 +188,19 @@ export function SectionModules() {
                     </ul>
                 </div>
                 <div className="flex w-full flex-col items-center justify-center gap-4">
-                    <div className="flex w-full items-center justify-center gap-2 rounded-xl bg-gray-200 py-4 text-2xl">
-                        <LockOpen />
-                        <span>Módulo 01</span>
+                    <div className="flex w-full flex-col items-center justify-center">
+                        <div className="flex w-full items-center justify-center gap-2 rounded-xl bg-gray-200 py-4 text-2xl">
+                            <LockOpen />
+                            <span>Módulo 01</span>
+                        </div>
+                        <div className="flex w-full items-center justify-center gap-2">
+                            <div>Aula 01</div>
+                            <div>Aula 02</div>
+                            <div>Aula 03</div>
+                            <div>Aula 04</div>
+                            <div>Aula 05</div>
+                            <div>Aula 06</div>
+                        </div>
                     </div>
                     <div className="flex w-full items-center justify-center gap-2 rounded-xl bg-gray-200 py-4 text-2xl">
                         <Lock />
