@@ -193,24 +193,29 @@ export function SectionModules() {
                             <LockOpen />
                             <span>Módulo 01 - 12 aulas</span>
                         </div>
-                        <div className="text-primary-white mt-4 flex w-full items-center justify-center gap-2 text-xl">
-                            <div className="flex flex-1 flex-col items-center justify-center rounded-xl bg-gray-700 px-6 py-12">
+                        <div className="text-primary-white mt-4 flex w-full flex-col items-center justify-center gap-2 text-xl md:flex-row">
+                            <div className="flex w-full flex-1 flex-col items-center justify-center rounded-xl bg-gray-700 px-6 py-12">
                                 <CirclePlay size={32} />
-                                Aula 01
+                                <Link
+                                    className="underline"
+                                    href={'/aula-1.mp4'}
+                                >
+                                    Clique Aula 01
+                                </Link>
                             </div>
-                            <div className="flex flex-1 flex-col items-center justify-center rounded-xl bg-gray-700 px-6 py-12">
+                            <div className="flex w-full flex-1 flex-col items-center justify-center rounded-xl bg-gray-700 px-6 py-12">
                                 <Lock size={32} />
                                 Aula 02
                             </div>
-                            <div className="flex flex-1 flex-col items-center justify-center rounded-xl bg-gray-700 px-6 py-12">
+                            <div className="flex w-full flex-1 flex-col items-center justify-center rounded-xl bg-gray-700 px-6 py-12">
                                 <Lock size={32} />
                                 Aula 03
                             </div>
-                            <div className="flex flex-1 flex-col items-center justify-center rounded-xl bg-gray-700 px-6 py-12">
+                            <div className="flex w-full flex-1 flex-col items-center justify-center rounded-xl bg-gray-700 px-6 py-12">
                                 <Lock size={32} />
                                 Aula 04
                             </div>
-                            <div className="flex flex-1 flex-col items-center justify-center rounded-xl bg-gray-700 px-6 py-12">
+                            <div className="flex w-full flex-1 flex-col items-center justify-center rounded-xl bg-gray-700 px-6 py-12">
                                 <Lock size={32} />
                                 +8 aulas
                             </div>
