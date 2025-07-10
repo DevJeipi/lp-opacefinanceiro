@@ -12,7 +12,7 @@ import { BadgeCheck } from 'lucide-react'
 
 export function SectionBenefits() {
     return (
-        <section className="bg-primary-white font-body rounded-br-4xl">
+        <section className="bg-primary-white font-body">
             <GridContainer className="relative flex flex-col items-center justify-center p-0 pt-48 md:flex-row md:px-8 lg:py-6">
                 <div className="absolute z-20 -translate-y-11/12 lg:-translate-x-3/4 lg:-translate-y-0">
                     <Image

@@ -1,6 +1,7 @@
 import { SectionHero } from '@/components/home/SectionHero'
 import { SectionPersuasive } from '@/components/home/SectionPersuasive'
 import { SectionBenefits } from '@/components/home/SectionBenefits'
+import { SectionFeedback } from '@/components/home/SectionFeedback'
 import { SectionMini } from '@/components/home/SectionMini'
 import { SectionWhoami } from '@/components/home/SectionWhoami'
 import { SectionList } from '@/components/home/SectionList'
@@ -22,6 +23,8 @@ export default function Home() {
 
                 <div className="bg-gradient-animated">
                     <SectionBenefits />
+
+                    <SectionFeedback />
 
                     <SectionMini />
 
