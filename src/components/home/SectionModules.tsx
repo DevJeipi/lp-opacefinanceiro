@@ -198,7 +198,7 @@ export function SectionModules() {
                                 <CirclePlay size={32} />
                                 <Link
                                     className="underline"
-                                    href={'/aula-1.mp4'}
+                                    href={'https://youtu.be/UqBFTd6mp1s'}
                                 >
                                     Clique Aula 01
                                 </Link>
