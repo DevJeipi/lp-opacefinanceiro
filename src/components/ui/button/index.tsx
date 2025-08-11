@@ -33,7 +33,7 @@ export function Button({
     }
 
     const links: Record<LinkType, string> = {
-        curso: 'https://pay.hotmart.com/K99772326B?checkoutMode=10',
+        curso: 'https://pay.hotmart.com/E101190894V',
         ebook: 'https://instagram.com/opacefinanceiro',
     }
 
