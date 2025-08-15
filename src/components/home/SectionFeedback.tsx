@@ -6,7 +6,7 @@ const feedbacks = [
     {
         id: 1,
         name: 'Maria Luiza dos Santos Oliveira',
-        role: 'CEO, TechStart',
+        //role: 'CEO, TechStart',
         content:
             'Otávio, penso e acredito que a "famosa planilha" é fundamental. Vejo amigos me dizendo que não anotam absolutamente nada do que gastam. A triste conclusão é que não sabem nada sobre sua vida financeira e, como dizes, estão num caminho preocupante. Obrigada por todas estas aulas até aqui. Tua capacidade didática e o conhecimento sobre o que falas são muito válidos, acredito, para todos nós. E vamos adiante. Abraço.',
         rating: 5,
@@ -15,7 +15,7 @@ const feedbacks = [
     {
         id: 2,
         name: 'Alice Alvares Ramos',
-        role: 'Diretor de Marketing',
+        //role: 'Diretor de Marketing',
         content:
             'Já vi e revi o curso e ainda irei rever outras vezes. Bom saber que nunca é tarde para se educar ou reeducar financeiramente (ou em qualquer outra área). Esse curso é para todos: quem nunca teve qualquer tipo de conhecimento na área ou para os que já investem. Dinâmico e objetivo, não tem quem não saia enriquecido com o conteúdo! Parabéns, Otávio, por explicar o óbvio ao desconhecido. Certeza que mudou minha visão e conhecimento em relação à educação financeira e investimentos.',
         rating: 5,
@@ -24,7 +24,7 @@ const feedbacks = [
     {
         id: 3,
         name: 'Flavio de Oliveira',
-        role: 'Fundadora, InovaCorp',
+        //role: 'Fundadora, InovaCorp',
         content:
             'Acredito firmemente que o caminho para uma existência feliz (entre outros aspectos) seja uma vida financeira equilibrada, com os impulsos de consumir que uma economia capitalista gera sob controle.\n' +
             'Somos diariamente bombardeados com os apelos ao consumo do sistema e tendemos a gastar mais do que ganhamos. Assim, achei o curso muito útil, esclarecedor e, sobretudo, simples, de modo a realmente induzir mudanças na vida financeira das pessoas. Obrigado por compartilhar o conhecimento e a experiência demonstrada.',
