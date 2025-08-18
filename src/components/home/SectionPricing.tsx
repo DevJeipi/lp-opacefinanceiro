@@ -8,7 +8,7 @@ import {
 } from '@/components/ui/card'
 import { GridContainer } from '@/components/ui/GridContainer'
 import { Button } from '@/components/ui/button'
-import { CheckCircle2, XCircle, ClockAlert } from 'lucide-react'
+import { CheckCircle2, XCircle } from 'lucide-react'
 
 // Lista de produtos
 const produtos = [
@@ -161,6 +161,12 @@ export function SectionPricing() {
                                     R$ 147
                                 </span>
                             </div>
+                            <span className="bg-primary-orange/20 mb-4 rounded-xl p-4">
+                                AVISO: <br />
+                                Ao entrar no link, você também terá opção de
+                                comprar somente o curso (sem os bônus) por R$
+                                97!
+                            </span>
                             <Button color="secondaryorange">
                                 Aprender com Segurança
                             </Button>
