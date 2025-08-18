@@ -105,7 +105,7 @@ export function SectionFeedback() {
                                     <p
                                         className={`text-sm ${index === 1 ? 'text-gray-300' : 'text-gray-500'}`}
                                     >
-                                        {feedback.role}
+                                        {/*{feedback.role}*/}
                                     </p>
                                 </div>
                             </div>
