@@ -366,9 +366,6 @@ export default function Ebook02() {
                 </GridContainer>
             </section>
             <section className="bg-primary-black flex items-center justify-center overflow-hidden">
-                <div className="bg-primary-orange absolute top-0 flex w-48 items-center justify-center rounded-b-xl">
-                    <ChevronDown color="var(--color-primary-white)" size={32} />
-                </div>
                 <div className="container">
                     <GridContainer className="flex flex-col items-center justify-center gap-8 pt-20 text-center">
                         <h1 className="font-heading text-primary-white mt-4 text-2xl font-bold sm:text-3xl">
