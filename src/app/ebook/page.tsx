@@ -70,7 +70,7 @@ export default function Ebook02() {
                     <div className="grid h-full grid-cols-1 grid-rows-2 items-center justify-center lg:grid-cols-2 lg:grid-rows-1">
                         <div className="flex items-center justify-center">
                             <Image
-                                src="/ebooks01.webp"
+                                src="/ebooks2.webp"
                                 width={250}
                                 height={415}
                                 alt="E-book O Renascimento Financeiro"
@@ -89,7 +89,7 @@ export default function Ebook02() {
                                 Para adquirir o melhor e-book introdutório de
                                 finanças basta clicar no botão abaixo e
                                 preencher o formulário. Você receberá o e-book
-                                em PDF diretamente no seu e-mail.
+                                em PDF diretamente no seu navegador.
                             </p>
                             <Button link="ebook" color="secondaryorange">
                                 Renascer financeiramente
@@ -365,7 +365,7 @@ export default function Ebook02() {
                     </Button>
                 </GridContainer>
             </section>
-            <section className="bg-primary-black relative flex items-center justify-center overflow-hidden">
+            <section className="bg-primary-black flex items-center justify-center overflow-hidden">
                 <div className="bg-primary-orange absolute top-0 flex w-48 items-center justify-center rounded-b-xl">
                     <ChevronDown color="var(--color-primary-white)" size={32} />
                 </div>
@@ -374,6 +374,22 @@ export default function Ebook02() {
                         <h1 className="font-heading text-primary-white mt-4 text-2xl font-bold sm:text-3xl">
                             Para quem é
                         </h1>
+{/* Mobile: cards empilhados; Desktop: cards sobrepostos */}
+                        <div className="flex w-full flex-col items-center justify-center gap-2 lg:hidden">
+                            {cards.map((card, index) => (
+                                <div
+                                    key={index}
+                                    className="bg-primary-white text-primary-blue border-primary-blue/50 flex h-72 w-11/12 max-w-xs flex-col items-center justify-center rounded-xl border p-6 shadow-2xl"
+                                >
+                                    <h2 className="mb-2 text-2xl font-bold">
+                                        {card.title}
+                                    </h2>
+                                    <p className="text--primary-blue/80">
+                                        {card.description}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
                         <div className="ml-16 hidden items-center justify-center lg:flex">
                             {cards.map((card, index) => (
                                 <div
