@@ -1,5 +1,5 @@
 import { GridContainer } from '@/components/ui/GridContainer'
-import { Button } from '@/components/ui/button'
+import { LeadCaptureTrigger } from '@/components/LeadCaptureTrigger'
 import {
     CalendarCheck,
     ChartLine,
@@ -151,7 +151,12 @@ export function SectionList() {
                         </div>
                     </div>
 
-                    <Button>Comece sua jornada agora</Button>
+                    <LeadCaptureTrigger
+                        source="curso"
+                        buttonText="Comece sua jornada agora"
+                        color="orange"
+                        spanText="Clique no botão acima"
+                    />
                 </GridContainer>
             </div>
         </section>

@@ -3,8 +3,8 @@ import dynamic from 'next/dynamic'
 import { GridContainer } from '@/components/ui/GridContainer'
 import { Quote } from '@/components/ui/quote'
 import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
 import iconCheck from '../../../public/icon-pacefinanceiro.webp'
+import { LeadCaptureTrigger } from '@/components/LeadCaptureTrigger'
 
 const OptimizedProfileImage = dynamic(
     () => import('@/components/ui/OptimizedProfileImage'),
@@ -53,7 +53,12 @@ export function SectionWhoami() {
                             </li>
                         ))}
                     </ul>
-                    <Button>Aprender com quem sabe</Button>
+                    <LeadCaptureTrigger
+                        source="curso"
+                        buttonText="Aprender com quem sabe"
+                        color="orange"
+                        spanText="Clique no botão acima"
+                    />
                 </div>
             </GridContainer>
         </section>

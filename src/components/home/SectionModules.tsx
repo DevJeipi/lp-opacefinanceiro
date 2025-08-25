@@ -1,6 +1,6 @@
 import { Badge } from '@/components/ui/badge'
 import { GridContainer } from '@/components/ui/GridContainer'
-import { Button } from '@/components/ui/button'
+import { LeadCaptureTrigger } from '@/components/LeadCaptureTrigger'
 import { ArrowRight, CirclePlay, Lock, LockOpen } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -230,7 +230,12 @@ export function SectionModules() {
                         <span>Módulo 03 - 8 aulas</span>
                     </div>
                 </div>
-                <Button>Investir em meu futuro</Button>
+                <LeadCaptureTrigger
+                    source="curso"
+                    buttonText="Investir em meu futuro"
+                    color="orange"
+                    spanText="Clique no botão acima"
+                />
             </GridContainer>
         </section>
     )

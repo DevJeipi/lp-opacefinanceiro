@@ -7,7 +7,7 @@ import {
     CardTitle,
 } from '@/components/ui/card'
 import { GridContainer } from '@/components/ui/GridContainer'
-import { Button } from '@/components/ui/button'
+import { LeadCaptureTrigger } from '@/components/LeadCaptureTrigger'
 import { CheckCircle2, XCircle } from 'lucide-react'
 
 // Lista de produtos
@@ -167,9 +167,11 @@ export function SectionPricing() {
                                 comprar somente o curso (sem os bônus) por R$
                                 97!
                             </span>
-                            <Button color="secondaryorange">
-                                Aprender com Segurança
-                            </Button>
+                            <LeadCaptureTrigger
+                                source="curso"
+                                buttonText="Aprender com segurança"
+                                color="secondaryorange"
+                            />
                         </CardFooter>
                     </Card>
                 </GridContainer>

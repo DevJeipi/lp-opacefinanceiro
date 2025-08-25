@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button'
+import { LeadCaptureTrigger } from '@/components/LeadCaptureTrigger'
 import { GridContainer } from '@/components/ui/GridContainer'
 import { Pin, Target, Landmark, Brain, Rocket } from 'lucide-react'
 
@@ -101,7 +101,12 @@ export function SectionPersuasive() {
                     </ul>
                     <div className="bg-primary-orange h-0.5 w-full rounded-full"></div>
                 </div>
-                <Button>Me tornar independente</Button>
+                <LeadCaptureTrigger
+                    source="curso"
+                    buttonText="Me tornar independente"
+                    color="orange"
+                    spanText="Clique no botão acima"
+                />
             </GridContainer>
         </section>
     )
