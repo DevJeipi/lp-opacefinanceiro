@@ -1,4 +1,3 @@
-import { Button } from '@/components/ui/button'
 import { GridContainer } from '@/components/ui/GridContainer'
 import { Line } from '@/components/ui/line'
 import { Badge } from '@/components/ui/badge'
@@ -10,7 +9,6 @@ import {
     ArrowDown,
     Ban,
     BookOpenCheck,
-    ChevronDown,
     Layers,
     LineChart,
     MessageCircleQuestion,
@@ -27,6 +25,7 @@ import {
     AccordionContent,
 } from '@/components/ui/accordion'
 import { Footer } from '@/components/footer'
+import { LeadCaptureTrigger } from '@/components/LeadCaptureTrigger'
 
 export default function Ebook02() {
     const cards = [
@@ -91,9 +90,12 @@ export default function Ebook02() {
                                 preencher o formulário. Você receberá o e-book
                                 em PDF diretamente no seu navegador.
                             </p>
-                            <Button link="ebook" color="secondaryorange">
-                                Renascer financeiramente
-                            </Button>
+                            <LeadCaptureTrigger
+                                source="ebook"
+                                buttonText="Renascer financeiramente"
+                                color="orange"
+                                spanText="Clique no botão acima"
+                            />
                         </div>
                     </div>
                     <Link
@@ -356,13 +358,12 @@ export default function Ebook02() {
                             </span>
                         </p>
                     </div>
-                    <Button
-                        link="ebook"
+                    <LeadCaptureTrigger
+                        source="ebook"
+                        buttonText="Adquirir Independência"
                         color="blue"
-                        className="whitespace-nowrap"
-                    >
-                        Adquirir Independência
-                    </Button>
+                        spanText="Clique no botão acima"
+                    />
                 </GridContainer>
             </section>
             <section className="bg-primary-black flex items-center justify-center overflow-hidden">
@@ -371,7 +372,7 @@ export default function Ebook02() {
                         <h1 className="font-heading text-primary-white mt-4 text-2xl font-bold sm:text-3xl">
                             Para quem é
                         </h1>
-{/* Mobile: cards empilhados; Desktop: cards sobrepostos */}
+                        {/* Mobile: cards empilhados; Desktop: cards sobrepostos */}
                         <div className="flex w-full flex-col items-center justify-center gap-2 lg:hidden">
                             {cards.map((card, index) => (
                                 <div

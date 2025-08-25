@@ -5,17 +5,21 @@ import Link from 'next/link'
 
 type LinkType = 'curso' | 'ebook'
 
+type ButtonProps = {
+    children: React.ReactNode
+    color?: 'orange' | 'secondaryorange' | 'blue'
+    className?: string
+    link?: LinkType
+    onClick?: () => void // A prop que faz toda a mágica acontecer!
+}
+
 export function Button({
     children,
     color = 'orange',
     className,
     link = 'curso',
-}: {
-    children: React.ReactNode
-    color?: 'orange' | 'secondaryorange' | 'blue'
-    className?: string
-    link?: LinkType
-}) {
+    onClick,
+}: ButtonProps) {
     const defaultButtonClasses =
         'flex items-center justify-center gap-2 px-6 py-2 sm:text-sm md:text-md text-xs font-bold font-heading rounded-tl-3xl rounded-br-3xl font-bold focus:outline-none cursor-pointer transition-all duration-400 shadow-md hover:scale-102'
 
@@ -34,21 +38,30 @@ export function Button({
 
     const links: Record<LinkType, string> = {
         curso: 'https://pay.hotmart.com/E101190894V?checkoutMode=10',
-        ebook: 'https://instagram.com/opacefinanceiro',
+        ebook: '/ORenascimentoFinanceiro.pdf',
+    }
+
+    if (onClick) {
+        return (
+            <button
+                type="button" // Garante que ele não envie um formulário por acidente
+                onClick={onClick}
+                className={cn(defaultButtonClasses, colors[color], className)}
+            >
+                {children}
+            </button>
+        )
     }
 
     return (
         <div className="flex flex-col items-center justify-center">
-            <button
+            <Link
+                href={links[link]}
+                aria-label="Acessar checkout de compra do curso"
                 className={cn(defaultButtonClasses, colors[color], className)}
             >
-                <Link
-                    href={links[link]}
-                    aria-label="Acessar checkout de compra do curso"
-                >
-                    {children}
-                </Link>
-            </button>
+                {children}
+            </Link>
             <span
                 className={cn(
                     'font-body text-center text-sm',
