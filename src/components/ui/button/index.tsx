@@ -38,7 +38,7 @@ export function Button({
 
     const links: Record<LinkType, string> = {
         curso: 'https://pay.hotmart.com/E101190894V?checkoutMode=10',
-        ebook: '/ORenascimentoFinanceiro.pdf',
+        ebook: '/ebook/recompensa',
     }
 
     if (onClick) {

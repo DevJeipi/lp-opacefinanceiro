@@ -55,7 +55,7 @@ export async function submitForm(
         redirectUrl = 'https://pay.hotmart.com/E101190894V?checkoutMode=10'
     } else if (source === 'ebook') {
         sheetName = 'Leads Ebook'
-        redirectUrl = '/ORenascimentoFinanceiro.pdf'
+        redirectUrl = '/ebook/recompensa'
     }
     // -------------------------
 
