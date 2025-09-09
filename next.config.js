@@ -10,6 +10,9 @@ const nextConfig = {
             "default-src 'self'; script-src 'none'; sandbox;",
     },
 
+    // Configuração para exportação estática
+    output: 'export',
+
     // Compressão
     compress: true,
 
