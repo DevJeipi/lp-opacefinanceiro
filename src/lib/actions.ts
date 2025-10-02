@@ -9,7 +9,7 @@ export type State = {
     errors?: {
         name?: string[]
         email?: string[]
-        number?: string[]
+        phone?: string[]
     }
     redirectUrl?: string | null
 }
@@ -17,7 +17,7 @@ export type State = {
 const FormSchema = z.object({
     name: z.string().min(2, { message: 'O nome é obrigatório.' }),
     email: z.string().email({ message: 'Por favor, insira um email válido.' }),
-    number: z
+    phone: z
         .string()
         .min(10, { message: 'O número de Whatsapp parece curto demais.' }),
     source: z.enum(['curso', 'ebook']), // Validação da origem
@@ -30,7 +30,7 @@ export async function submitForm(
     const validatedFields = FormSchema.safeParse({
         name: formData.get('name'),
         email: formData.get('email'),
-        number: formData.get('number'),
+        phone: formData.get('phone'),
         source: formData.get('source'),
     })
 
@@ -41,7 +41,7 @@ export async function submitForm(
         }
     }
 
-    const { name, email, number, source } = validatedFields.data
+    const { name, email, phone, source } = validatedFields.data
     const submissionDate = new Date().toLocaleString('pt-BR', {
         timeZone: 'America/Sao_Paulo',
     })
@@ -84,7 +84,7 @@ export async function submitForm(
             requestBody: {
                 values: [
                     // A ordem aqui deve ser a mesma das colunas na planilha
-                    [name, email, number, submissionDate],
+                    [name, email, phone, submissionDate],
                 ],
             },
         })
