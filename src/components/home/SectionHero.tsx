@@ -3,7 +3,7 @@ import fotoOtavio from '../../../public/foto-otavio-17-removebg.webp'
 import { GridContainer } from '@/components/ui/GridContainer'
 import { BgImage } from '@/components/ui/BgImage'
 import { Header } from '@/components/header'
-import { LeadCaptureTrigger } from '../LeadCaptureTrigger'
+import { Button } from '@/components/ui/button'
 
 export function SectionHero() {
     return (
@@ -35,12 +35,9 @@ export function SectionHero() {
                         </p>
                     </div>
                     <div className="flex w-full items-center justify-center">
-                        <LeadCaptureTrigger
-                            source="curso"
-                            buttonText="Começar com segurança"
-                            color="blue"
-                            spanText="Clique no botão acima"
-                        />
+                        <Button link="curso" color="blue">
+                            Começar com segurança
+                        </Button>
                     </div>
                 </GridContainer>
                 <div className="bg-primary-white h-8 w-full rounded-t-full" />

@@ -7,8 +7,8 @@ import {
     CardTitle,
 } from '@/components/ui/card'
 import { GridContainer } from '@/components/ui/GridContainer'
-import { LeadCaptureTrigger } from '@/components/LeadCaptureTrigger'
 import { CheckCircle2, XCircle } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 // Lista de produtos
 const produtos = [
@@ -167,11 +167,9 @@ export function SectionPricing() {
                                 comprar somente o curso (sem os bônus) por R$
                                 97!
                             </span>
-                            <LeadCaptureTrigger
-                                source="curso"
-                                buttonText="Aprender com segurança"
-                                color="secondaryorange"
-                            />
+                            <Button link="curso" color="secondaryorange">
+                                Aprender com segurança
+                            </Button>
                         </CardFooter>
                     </Card>
                 </GridContainer>

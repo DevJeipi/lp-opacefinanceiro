@@ -4,7 +4,7 @@ import { GridContainer } from '@/components/ui/GridContainer'
 import { Quote } from '@/components/ui/quote'
 import { Badge } from '@/components/ui/badge'
 import iconCheck from '../../../public/icon-pacefinanceiro.webp'
-import { LeadCaptureTrigger } from '@/components/LeadCaptureTrigger'
+import { Button } from '@/components/ui/button'
 
 const OptimizedProfileImage = dynamic(
     () => import('@/components/ui/OptimizedProfileImage'),
@@ -53,12 +53,9 @@ export function SectionWhoami() {
                             </li>
                         ))}
                     </ul>
-                    <LeadCaptureTrigger
-                        source="curso"
-                        buttonText="Aprender com quem sabe"
-                        color="orange"
-                        spanText="Clique no botão acima"
-                    />
+                    <Button link="curso" color="orange">
+                        Aprender com quem sabe
+                    </Button>
                 </div>
             </GridContainer>
         </section>

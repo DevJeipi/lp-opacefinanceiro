@@ -1,6 +1,5 @@
 import { Badge } from '@/components/ui/badge'
 import { GridContainer } from '@/components/ui/GridContainer'
-import { LeadCaptureTrigger } from '@/components/LeadCaptureTrigger'
 import { ArrowRight, CirclePlay, Lock, LockOpen } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -8,6 +7,7 @@ import module1 from '../../../public/modulo01-img.webp'
 import module2 from '../../../public/modulo02-img.webp'
 import module3 from '../../../public/modulo03-img.webp'
 import velas from '../../../public/velas.webp'
+import { Button } from '@/components/ui/button'
 
 export function SectionModules() {
     return (
@@ -230,12 +230,9 @@ export function SectionModules() {
                         <span>Módulo 03 - 8 aulas</span>
                     </div>
                 </div>
-                <LeadCaptureTrigger
-                    source="curso"
-                    buttonText="Investir em meu futuro"
-                    color="orange"
-                    spanText="Clique no botão acima"
-                />
+                <Button link="curso" color="orange">
+                    Investir em meu futuro
+                </Button>
             </GridContainer>
         </section>
     )

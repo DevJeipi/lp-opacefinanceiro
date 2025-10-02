@@ -1,5 +1,4 @@
 import { GridContainer } from '@/components/ui/GridContainer'
-import { LeadCaptureTrigger } from '@/components/LeadCaptureTrigger'
 import {
     CalendarCheck,
     ChartLine,
@@ -7,6 +6,7 @@ import {
     Users,
     LibraryBig,
 } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 export function SectionList() {
     return (
@@ -151,12 +151,9 @@ export function SectionList() {
                         </div>
                     </div>
 
-                    <LeadCaptureTrigger
-                        source="curso"
-                        buttonText="Comece sua jornada agora"
-                        color="orange"
-                        spanText="Clique no botão acima"
-                    />
+                    <Button link="curso" color="orange">
+                        Comece sua jornada agora
+                    </Button>
                 </GridContainer>
             </div>
         </section>
