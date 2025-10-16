@@ -1,6 +1,7 @@
 import './globals.css'
 import { Metadata } from 'next'
 import { Lato } from 'next/font/google'
+import Script from 'next/script'
 
 // Metadata for SEO
 export const metadata: Metadata = {
@@ -70,7 +71,32 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="pt-br" dir="ltr">
-            <body className={`${lato.className} antialiased`}>{children}</body>
+            {/* Script do Google Tag Manager para o <head> */}
+            <Script
+                id="gtm-script-head"
+                strategy="afterInteractive" // Carrega após a página se tornar interativa
+                dangerouslySetInnerHTML={{
+                    __html: `
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WT4GLWFJ');
+          `,
+                }}
+            />
+            <body className={`${lato.className} antialiased`}>
+                {/* Fallback do Google Tag Manager para o <body> */}
+                <noscript>
+                    <iframe
+                        src="https://www.googletagmanager.com/ns.html?id=GTM-WT4GLWFJ"
+                        height="0"
+                        width="0"
+                        style={{ display: 'none', visibility: 'hidden' }}
+                    ></iframe>
+                </noscript>
+                {children}
+            </body>
         </html>
     )
 }
