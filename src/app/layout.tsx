@@ -1,6 +1,6 @@
-import './globals.css'
 import { Metadata } from 'next'
 import { Lato } from 'next/font/google'
+import './globals.css'
 import Script from 'next/script'
 
 // Metadata for SEO
