@@ -37,7 +37,7 @@ export function Button({
     }
 
     const links: Record<LinkType, string> = {
-        curso: 'https://www.udemy.com/course/curso-do-cheque-especial-a-independencia-financeira/', // https://pay.hotmart.com/E101190894V?checkoutMode=10
+        curso: 'https://pay.hotmart.com/E101190894V?checkoutMode=10', // https://www.udemy.com/course/curso-do-cheque-especial-a-independencia-financeira/
         ebook: '/ebook/recompensa',
     }
 
