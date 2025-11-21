@@ -158,7 +158,7 @@ export function SectionPricing() {
                             <div className="font-body mb-4 flex items-end gap-1">
                                 <p className="text-2xl md:text-3xl">Por:</p>
                                 <span className="text-4xl md:text-6xl">
-                                    R$ 48,50
+                                    R$ 49,90
                                 </span>
                             </div>
                             <span className="bg-primary-orange/20 mb-4 rounded-xl p-4">
