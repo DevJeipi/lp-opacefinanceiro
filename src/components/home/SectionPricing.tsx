@@ -158,14 +158,11 @@ export function SectionPricing() {
                             <div className="font-body mb-4 flex items-end gap-1">
                                 <p className="text-2xl md:text-3xl">Por:</p>
                                 <span className="text-4xl md:text-6xl">
-                                    R$ 147
+                                    R$ 48,50
                                 </span>
                             </div>
                             <span className="bg-primary-orange/20 mb-4 rounded-xl p-4">
-                                AVISO: <br />
-                                Ao entrar no link, você também terá opção de
-                                comprar somente o curso (sem os bônus) por R$
-                                97!
+                               BLACK 50% OFF
                             </span>
                             <Button link="curso" color="secondaryorange">
                                 Aprender com segurança
