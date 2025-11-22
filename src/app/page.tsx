@@ -12,11 +12,13 @@ import { SectionFAQ } from '@/components/home/SectionFAQ'
 import { Footer } from '@/components/footer'
 
 import { GoogleTagManager } from '@next/third-parties/google'
+import { Announcement } from '@/components/ui/announcement'
 
 export default function Home() {
     return (
         <div className="flex min-h-screen flex-col overflow-hidden">
             <main className="flex-1">
+                <Announcement />
                 <SectionHero />
 
                 <SectionPersuasive />

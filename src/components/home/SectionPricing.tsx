@@ -106,7 +106,10 @@ export function SectionPricing() {
                             </span>
                         </p>
                     </div>
-                    <Card className="bg-primary-black text-primary-white font-body w-full font-bold md:w-2/3">
+                    <Card
+                        id="pricing"
+                        className="bg-primary-black text-primary-white font-body w-full font-bold md:w-2/3"
+                    >
                         <CardHeader>
                             <CardTitle className="text-2xl sm:text-3xl">
                                 São
@@ -162,7 +165,7 @@ export function SectionPricing() {
                                 </span>
                             </div>
                             <span className="bg-primary-orange/20 mb-4 rounded-xl p-4">
-                               BLACK 50% OFF
+                                BLACK 50% OFF
                             </span>
                             <Button link="curso" color="secondaryorange">
                                 Aprender com segurança
