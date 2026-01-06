@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { Lato } from 'next/font/google'
 import './globals.css'
 import Script from 'next/script'
+import { QuizProvider } from '@/components/quiz/QuizContext'
 
 // Metadata for SEO
 export const metadata: Metadata = {
@@ -95,7 +96,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         style={{ display: 'none', visibility: 'hidden' }}
                     ></iframe>
                 </noscript>
-                {children}
+                <QuizProvider>{children}</QuizProvider>
             </body>
         </html>
     )

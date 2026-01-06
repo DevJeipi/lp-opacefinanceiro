@@ -164,9 +164,6 @@ export function SectionPricing() {
                                     R$ 49,90
                                 </span>
                             </div>
-                            <span className="bg-primary-orange/20 mb-4 rounded-xl p-4">
-                                BLACK 50% OFF
-                            </span>
                             <Button link="curso" color="secondaryorange">
                                 Aprender com segurança
                             </Button>
