@@ -14,7 +14,7 @@ export function SectionHero() {
                 {/* Título no topo */}
                 <div className="text-center text-primary-white px-4">
                     <h1 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 leading-tight">
-                        98.9% das Pessoas Vão Se Sabotar Neste Workshop...
+                        98.9% das Pessoas Se Sabotam Financeiramente...
                     </h1>
                     <p className="font-body text-base sm:text-lg md:text-xl lg:text-2xl">
                         Veja como fazer parte dos 1.1% que realmente obtêm resultados
