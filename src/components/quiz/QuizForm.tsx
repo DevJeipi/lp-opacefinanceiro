@@ -249,14 +249,14 @@ export function QuizForm({ onComplete }: QuizFormProps = {}) {
                 )}
 
                 {/* Barra de Progresso e Botão */}
-                <div className="mt-4 flex items-center justify-between gap-4">
+                <div className="mt-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
                     <div className="flex items-center gap-3">
                         <span className="font-body text-sm font-medium text-primary-black/70">
                             {currentStep}/{totalSteps}
                         </span>
                         <Progress
                             value={progress}
-                            className="h-2 w-32 bg-primary-blue/20"
+                            className="h-2 flex-1 sm:w-32 bg-primary-blue/20"
                         >
                             <div className="h-full w-full bg-gradient-animated" />
                         </Progress>
@@ -268,7 +268,7 @@ export function QuizForm({ onComplete }: QuizFormProps = {}) {
                                 : handlePhoneContinue
                         }
                         color="orange"
-                        className="min-w-[120px]"
+                        className="w-full sm:w-auto sm:min-w-[120px]"
                         disabled={isSubmitting}
                     >
                         {isSubmitting ? 'Salvando...' : 'Próximo'}

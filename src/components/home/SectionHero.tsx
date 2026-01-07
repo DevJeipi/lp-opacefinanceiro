@@ -12,11 +12,11 @@ export function SectionHero() {
             <BgImage />
             <GridContainer className="flex flex-col items-center justify-center gap-8 z-10">
                 {/* Título no topo */}
-                <div className="text-center text-primary-white px-4">
-                    <h1 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 leading-tight">
+                <div className="text-center text-primary-white px-4 w-full">
+                    <h1 className="font-heading font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 leading-tight break-words">
                         98.9% das Pessoas Se Sabotam Financeiramente...
                     </h1>
-                    <p className="font-body text-base sm:text-lg md:text-xl lg:text-2xl">
+                    <p className="font-body text-sm sm:text-lg md:text-xl lg:text-2xl break-words">
                         Veja como fazer parte dos 1.1% que realmente obtêm resultados
                     </p>
                 </div>
