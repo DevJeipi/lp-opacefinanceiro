@@ -10,40 +10,12 @@ import { GridContainer } from '@/components/ui/GridContainer'
 import { CheckCircle2, XCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
-// Lista de produtos
-const produtos = [
-    {
-        nome: 'Curso - Do Cheque Especial à Independência Financeira',
-        preco: 'R$ 1187',
-    },
-    {
-        nome: 'Curso Pocket - Investimentos em Fundos ETF',
-        preco: 'R$ 89',
-    },
-    {
-        nome: 'E-book Renascimento Financeiro',
-        preco: 'R$ 17',
-    },
-    {
-        nome: 'E-book Como Começar com Segurança',
-        preco: 'R$ 27',
-    },
-    {
-        nome: 'Planilha de Controle Financeiro',
-        preco: 'R$ 56',
-    },
-    {
-        nome: 'Planilha de Controle de Gastos Simplificada',
-        preco: 'R$ 31',
-    },
-    {
-        nome: 'Planilha de Portfólio de Investimentos',
-        preco: 'R$ 61',
-    },
-    {
-        nome: '4 artigos exclusivos',
-        preco: 'R$ 72',
-    },
+// Benefícios do curso
+const beneficios = [
+    'Conteúdo completo e organizado',
+    'Acesso vitalício',
+    'Método comprovado e prático',
+    'Transformação real da sua relação com o dinheiro',
 ]
 
 export function SectionPricing() {
@@ -112,41 +84,27 @@ export function SectionPricing() {
                     >
                         <CardHeader>
                             <CardTitle className="text-2xl sm:text-3xl">
-                                São
+                                Curso Completo
+                                <br />
                                 <span className="text-gradient-animated px-2">
-                                    6 produtos
-                                </span>
-                                do
-                                <br /> Pace Financeiro pelo
-                                <span className="text-gradient-animated px-2">
-                                    preço de 1
+                                    Do Cheque Especial à Independência Financeira
                                 </span>
                             </CardTitle>
                         </CardHeader>
                         <CardContent>
                             <div className="bg-primary-white mb-6 h-0.5 w-full rounded-full"></div>
                             <ul className="mb-6 flex flex-col gap-4">
-                                {produtos.map((item, index) => (
+                                {beneficios.map((beneficio, index) => (
                                     <li
                                         key={index}
-                                        className="flex w-full flex-col lg:flex-row"
+                                        className="flex items-center gap-3 text-left lg:text-xl"
                                     >
-                                        <div className="flex flex-1 items-center justify-between gap-4 text-left lg:text-xl">
-                                            <div className="flex items-center gap-2">
-                                                <CheckCircle2
-                                                    fill="var(--color-primary-orange)"
-                                                    stroke="var(--color-primary-black)"
-                                                />
-                                                <p className="flex-1">
-                                                    {item.nome}
-                                                </p>
-                                            </div>
-                                            <div className="to-primary-orange hidden h-2 flex-1 bg-gradient-to-r from-transparent lg:block" />
-                                            <span className="text-primary-white rounded-sm p-1 whitespace-nowrap">
-                                                {item.preco}
-                                            </span>
-                                        </div>
-                                        <div className="to-primary-orange h-1 w-full bg-gradient-to-r from-transparent lg:hidden" />
+                                        <CheckCircle2
+                                            fill="var(--color-primary-orange)"
+                                            stroke="var(--color-primary-black)"
+                                            className="flex-shrink-0"
+                                        />
+                                        <p className="flex-1">{beneficio}</p>
                                     </li>
                                 ))}
                             </ul>
@@ -155,7 +113,7 @@ export function SectionPricing() {
                             <div className="font-body text-secondary-orange flex items-end gap-1 font-normal">
                                 <p className="md:text-xl">De:</p>
                                 <span className="text-2xl line-through md:text-4xl">
-                                    R$ 1.560
+                                    R$ 197,00
                                 </span>
                             </div>
                             <div className="font-body mb-4 flex items-end gap-1">
