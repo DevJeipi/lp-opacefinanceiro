@@ -87,7 +87,8 @@ export function SectionPricing() {
                                 Curso Completo
                                 <br />
                                 <span className="text-gradient-animated px-2">
-                                    Do Cheque Especial à Independência Financeira
+                                    Do Cheque Especial à Independência
+                                    Financeira
                                 </span>
                             </CardTitle>
                         </CardHeader>
@@ -119,7 +120,7 @@ export function SectionPricing() {
                             <div className="font-body mb-4 flex items-end gap-1">
                                 <p className="text-2xl md:text-3xl">Por:</p>
                                 <span className="text-4xl md:text-6xl">
-                                    R$ 49,90
+                                    R$ 97,00
                                 </span>
                             </div>
                             <Button link="curso" color="secondaryorange">
