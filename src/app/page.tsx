@@ -1,3 +1,5 @@
+'use client'
+
 import { SectionHero } from '@/components/home/SectionHero'
 import { SectionPersuasive } from '@/components/home/SectionPersuasive'
 import { SectionBenefits } from '@/components/home/SectionBenefits'
@@ -13,8 +15,16 @@ import { Footer } from '@/components/footer'
 
 import { GoogleTagManager } from '@next/third-parties/google'
 import { Announcement } from '@/components/ui/announcement'
+import { useEffect } from 'react'
+import Clarity from '@microsoft/clarity'
+
+const projectId = 'vjadoi2y2v'
 
 export default function Home() {
+    useEffect(() => {
+        Clarity.init(projectId)
+    }, [])
+
     return (
         <div className="flex min-h-screen flex-col overflow-hidden">
             <main className="flex-1">
