@@ -2,6 +2,7 @@
 
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
+import { useQuiz } from '@/components/quiz/QuizContext'
 
 type LinkType = 'curso' | 'ebook'
 
@@ -11,6 +12,7 @@ type ButtonProps = {
     className?: string
     link?: LinkType
     onClick?: () => void // A prop que faz toda a mágica acontecer!
+    disabled?: boolean
 }
 
 export function Button({
@@ -19,7 +21,12 @@ export function Button({
     className,
     link = 'curso',
     onClick,
+    disabled = false,
 }: ButtonProps) {
+    const { openQuiz } = useQuiz()
+
+    // Se link="curso" e não tem onClick customizado, abre o modal
+    const handleClick = onClick || (link === 'curso' ? openQuiz : undefined)
     const defaultButtonClasses =
         'flex items-center justify-center gap-2 px-6 py-2 sm:text-sm md:text-md text-xs font-bold font-heading rounded-tl-3xl rounded-br-3xl font-bold focus:outline-none cursor-pointer transition-all duration-400 shadow-md hover:scale-102'
 
@@ -41,18 +48,36 @@ export function Button({
         ebook: '/ebook/recompensa',
     }
 
-    if (onClick) {
+    // Se tem onClick (customizado ou do modal) ou link="curso", usa button
+    if (handleClick) {
         return (
-            <button
-                type="button" // Garante que ele não envie um formulário por acidente
-                onClick={onClick}
-                className={cn(defaultButtonClasses, colors[color], className)}
-            >
-                {children}
-            </button>
+            <div className="flex flex-col items-center justify-center">
+                <button
+                    type="button" // Garante que ele não envie um formulário por acidente
+                    onClick={handleClick}
+                    disabled={disabled}
+                    className={cn(
+                        defaultButtonClasses,
+                        colors[color],
+                        disabled && 'opacity-50 cursor-not-allowed',
+                        className
+                    )}
+                >
+                    {children}
+                </button>
+                <span
+                    className={cn(
+                        'font-body text-center text-sm',
+                        spanColors[color]
+                    )}
+                >
+                    Clique no botão acima
+                </span>
+            </div>
         )
     }
 
+    // Para outros links (como ebook), usa Link normal
     return (
         <div className="flex flex-col items-center justify-center">
             <Link

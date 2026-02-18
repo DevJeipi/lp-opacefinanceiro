@@ -1,47 +1,51 @@
-import Image from 'next/image'
-import fotoOtavio from '../../../public/foto-otavio-17-removebg.webp'
-import { GridContainer } from '@/components/ui/GridContainer'
 import { BgImage } from '@/components/ui/BgImage'
-import { Header } from '@/components/header'
 import { Button } from '@/components/ui/button'
+import { HeroVideoDialog } from '@/components/ui/hero-video-dialog'
+import { GridContainer } from '@/components/ui/GridContainer'
 
 export function SectionHero() {
+    const videoId = "v8atXPQTLxs";
+    const embedUrl = `https://www.youtube.com/embed/${videoId}?modestbranding=1&rel=0&showinfo=0&controls=1&fs=1&playsinline=1&cc_load_policy=0&iv_load_policy=3`;
+
     return (
-        <section className="relative">
-            <Header />
+        <section className="relative min-h-screen flex flex-col items-center justify-center py-8">
             <BgImage />
-            <div className="relative flex h-80 w-full items-center justify-center md:h-120">
-                <Image
-                    src={fotoOtavio}
-                    width={320}
-                    height={480}
-                    alt="Foto do Otávio Daudt, criador do Pace Financeiro"
-                    className="xs:w-64 absolute -z-10 h-full w-48 object-cover md:w-80"
-                    priority
-                    placeholder="blur"
-                    sizes="(max-width: 383px) 192px, (max-width: 767px) 256px, 320px"
-                />
-                <div className="bg-primary-white absolute top-20 -z-20 h-32 w-32 blur-xl md:top-35"></div>
-            </div>
-            <div className="text-primary-white bg-gradient-hero mt-[-8rem] flex w-full flex-col items-center justify-center text-center">
-                <GridContainer className="pt-12">
-                    <div className="mb-4">
-                        <h1 className="font-heading font-bold md:text-2xl">
-                            Independência Financeira Sem Ilusões
-                        </h1>
-                        <p className="font-body font-bold">
-                            Aprenda sem atalhos, sem riscos desnecessários e com
-                            método testado na vida real.
-                        </p>
-                    </div>
-                    <div className="flex w-full items-center justify-center">
-                        <Button link="curso" color="blue">
-                            Começar com segurança
-                        </Button>
-                    </div>
-                </GridContainer>
-                <div className="bg-primary-white h-8 w-full rounded-t-full" />
-            </div>
+            <GridContainer className="flex flex-col items-center justify-center gap-8 z-10">
+                {/* Título no topo */}
+                <div className="text-center text-primary-white px-4 w-full">
+                    <h1 className="font-heading font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 leading-tight break-words">
+                        98.9% das Pessoas Se Sabotam Financeiramente...
+                    </h1>
+                    <p className="font-body text-sm sm:text-lg md:text-xl lg:text-2xl break-words">
+                        Veja como fazer parte dos 1.1% que realmente obtêm resultados
+                    </p>
+                </div>
+
+                {/* Vídeo no meio */}
+                <div className="flex items-center justify-center w-full max-w-md">
+                    <HeroVideoDialog
+                        className="block dark:hidden w-full"
+                        animationStyle="from-center"
+                        videoSrc={embedUrl}
+                        thumbnailSrc="/banner-aula-gratis-otavio.webp"
+                        thumbnailAlt="Hero Video"
+                    />
+                    <HeroVideoDialog
+                        className="hidden dark:block w-full"
+                        animationStyle="from-center"
+                        videoSrc={embedUrl}
+                        thumbnailSrc="/banner-aula-gratis-otavio.webp"
+                        thumbnailAlt="Hero Video"
+                    />
+                </div>
+
+                {/* Botão abaixo */}
+                <div className="flex w-full items-center justify-center">
+                    <Button link="curso" color="secondaryorange">
+                        SIM, EU QUERO O CURSO
+                    </Button>
+                </div>
+            </GridContainer>
         </section>
     )
 }

@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { Lato } from 'next/font/google'
 import './globals.css'
 import Script from 'next/script'
+import { QuizProvider } from '@/components/quiz/QuizContext'
 
 // Metadata for SEO
 export const metadata: Metadata = {
@@ -85,6 +86,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           `,
                 }}
             />
+            {/* Script do Facebook Pixel */}
+            <Script
+                id="facebook-pixel"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: `
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '4050422121943930');
+            fbq('track', 'PageView');
+          `,
+                }}
+            />
             <body className={`${lato.className} antialiased`}>
                 {/* Fallback do Google Tag Manager para o <body> */}
                 <noscript>
@@ -95,7 +115,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         style={{ display: 'none', visibility: 'hidden' }}
                     ></iframe>
                 </noscript>
-                {children}
+                <QuizProvider>{children}</QuizProvider>
             </body>
         </html>
     )
