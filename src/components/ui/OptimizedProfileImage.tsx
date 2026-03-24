@@ -13,7 +13,6 @@ export default function OptimizedProfileImage() {
                 loading="lazy"
                 placeholder="blur"
                 sizes="(max-width: 767px) 320px, 480px"
-                quality={85}
                 priority={false}
             />
         </div>

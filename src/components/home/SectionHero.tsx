@@ -1,7 +1,7 @@
 import { BgImage } from '@/components/ui/BgImage'
 import { Button } from '@/components/ui/button'
 import { GridContainer } from '@/components/ui/GridContainer'
-import { LazyYouTube } from '@/components/ui/LazyYoutube'
+import { HeroVideo } from '@/components/ui/HeroVideo'
 import { Shield } from 'lucide-react'
 
 export function SectionHero() {
@@ -20,9 +20,10 @@ export function SectionHero() {
                 {/* Vídeo no meio */}
                 <div className="w-full max-w-md">
                     <div className="relative aspect-[9/16] w-full overflow-hidden rounded-2xl border-2 border-white shadow-lg">
-                        <div className="relative aspect-[9/16] w-full overflow-hidden rounded-2xl border-2 border-white shadow-lg">
-                            <LazyYouTube videoId="v8atXPQTLxs" />
-                        </div>
+                        <HeroVideo
+                            src="/videos/video-hero.mp4"
+                            poster="/videos/poster.jpg"
+                        />
                     </div>
                     <div className="text-primary-white bg-primary-orange/40 -mt-3 rounded-b-xl pt-7 pb-4 text-center">
                         <p className="font-body text-base sm:text-xl">
