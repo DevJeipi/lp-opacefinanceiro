@@ -15,6 +15,11 @@ export function SectionHero() {
                         ASSISTA AGORA: A aula de 10 minutos que vai te ensinar a
                         sair do cheque especial.
                     </h1>
+                    <p className="text-xs md:text-lg">
+                        Pare de pagar juros abusivos e recupere o controle do
+                        seu salário com o método do Otávio Daudt. Acesso
+                        vitalício por apenas R$ 97.
+                    </p>
                 </div>
 
                 {/* Vídeo no meio */}
