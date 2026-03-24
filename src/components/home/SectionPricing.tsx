@@ -124,7 +124,7 @@ export function SectionPricing() {
                                 </span>
                             </div>
                             <Button link="curso" color="secondaryorange">
-                                Aprender com segurança
+                                QUERO SAIR DO VERMELHO POR R$ 97
                             </Button>
                         </CardFooter>
                     </Card>

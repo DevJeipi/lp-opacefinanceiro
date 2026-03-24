@@ -54,7 +54,7 @@ export function SectionWhoami() {
                         ))}
                     </ul>
                     <Button link="curso" color="orange">
-                        Aprender com quem sabe
+                        QUERO SAIR DO VERMELHO POR R$ 97
                     </Button>
                 </div>
             </GridContainer>

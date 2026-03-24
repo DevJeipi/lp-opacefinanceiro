@@ -152,7 +152,7 @@ export function SectionList() {
                     </div>
 
                     <Button link="curso" color="orange">
-                        Comece sua jornada agora
+                        QUERO SAIR DO VERMELHO POR R$ 97
                     </Button>
                 </GridContainer>
             </div>

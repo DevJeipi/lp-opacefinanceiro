@@ -102,7 +102,7 @@ export function SectionPersuasive() {
                     <div className="bg-primary-orange h-0.5 w-full rounded-full"></div>
                 </div>
                 <Button link="curso" color="orange">
-                    Me tornar independente
+                    QUERO SAIR DO VERMELHO POR R$ 97
                 </Button>
             </GridContainer>
         </section>

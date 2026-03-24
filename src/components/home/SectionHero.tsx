@@ -1,49 +1,75 @@
 import { BgImage } from '@/components/ui/BgImage'
 import { Button } from '@/components/ui/button'
-import { HeroVideoDialog } from '@/components/ui/hero-video-dialog'
 import { GridContainer } from '@/components/ui/GridContainer'
+import { Shield } from 'lucide-react'
 
 export function SectionHero() {
-    const videoId = "v8atXPQTLxs";
-    const embedUrl = `https://www.youtube.com/embed/${videoId}?modestbranding=1&rel=0&showinfo=0&controls=1&fs=1&playsinline=1&cc_load_policy=0&iv_load_policy=3`;
+    const videoId = 'v8atXPQTLxs'
+    const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1&controls=1&loop=1&playlist=${videoId}`
 
     return (
-        <section className="relative flex min-h-screen flex-col justify-start pt-16 pb-12 sm:pt-20 md:pt-24">
+        <section className="relative flex min-h-screen flex-col justify-start pb-12">
             <BgImage />
             <GridContainer className="z-10 flex flex-col items-center justify-start gap-8">
                 {/* Título no topo */}
-                <div className="text-center text-primary-white px-4 w-full">
-                    <h1 className="font-heading font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 leading-tight break-words">
-                        98.9% das Pessoas Se Sabotam Financeiramente...
+                <div className="text-primary-white w-full px-4 text-center">
+                    <h1 className="font-body text-xl leading-tight font-bold break-words sm:text-3xl md:text-4xl lg:text-5xl">
+                        ASSISTA AGORA: A aula de 10 minutos que vai te ensinar a
+                        sair do cheque especial.
                     </h1>
-                    <p className="font-body text-sm sm:text-lg md:text-xl lg:text-2xl break-words">
-                        Veja como fazer parte dos 1.1% que realmente obtêm resultados
-                    </p>
                 </div>
 
                 {/* Vídeo no meio */}
-                <div className="flex items-center justify-center w-full max-w-md">
-                    <HeroVideoDialog
-                        className="block dark:hidden w-full"
-                        animationStyle="from-center"
-                        videoSrc={embedUrl}
-                        thumbnailSrc="/banner-aula-gratis-otavio.webp"
-                        thumbnailAlt="Hero Video"
-                    />
-                    <HeroVideoDialog
-                        className="hidden dark:block w-full"
-                        animationStyle="from-center"
-                        videoSrc={embedUrl}
-                        thumbnailSrc="/banner-aula-gratis-otavio.webp"
-                        thumbnailAlt="Hero Video"
-                    />
+                <div className="w-full max-w-md">
+                    <div className="relative aspect-[9/16] w-full overflow-hidden rounded-2xl border-2 border-white shadow-lg">
+                        <iframe
+                            src={embedUrl}
+                            title="Aula inicial"
+                            className="h-full w-full"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                        />
+                    </div>
+                    <div className="text-primary-white bg-primary-orange/40 -mt-3 rounded-b-xl pt-7 pb-4 text-center">
+                        <p className="font-body text-base sm:text-xl">
+                            <span className="text-2xl font-bold sm:text-3xl">
+                                R$ 97,00
+                            </span>{' '}
+                            ou 4x de R$ 26,40
+                        </p>
+                    </div>
                 </div>
 
-                {/* Botão abaixo */}
-                <div className="flex w-full items-center justify-center">
-                    <Button link="curso" color="secondaryorange">
-                        SIM, EU QUERO O CURSO
+                <div className="flex w-full max-w-md flex-col items-center gap-4 text-center">
+                    <Button
+                        link="curso"
+                        color="secondaryorange"
+                        className="w-full"
+                    >
+                        QUERO SAIR DO VERMELHO POR R$ 97
                     </Button>
+                    <div className="bg-primary-white/10 border-primary-white/20 rounded-lg border p-4 backdrop-blur-sm">
+                        <div className="flex items-start gap-3">
+                            <Shield
+                                className="mt-0.5 flex-shrink-0 text-green-400"
+                                size={20}
+                            />
+                            <div className="text-left">
+                                <p className="font-body text-primary-white mb-1 text-sm font-semibold sm:text-base">
+                                    Garantia Incondicional de 7 Dias
+                                </p>
+                                <p className="font-body text-primary-white/90 text-xs leading-relaxed sm:text-sm">
+                                    Se em uma semana você não sentir que o
+                                    método vai mudar sua vida financeira, eu
+                                    devolvo{' '}
+                                    <span className="font-bold text-green-300">
+                                        100% do seu dinheiro
+                                    </span>
+                                    . Sem perguntas. O risco é todo meu.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </GridContainer>
         </section>

@@ -231,7 +231,7 @@ export function SectionModules() {
                     </div>
                 </div>
                 <Button link="curso" color="orange">
-                    Investir em meu futuro
+                    QUERO SAIR DO VERMELHO POR R$ 97
                 </Button>
             </GridContainer>
         </section>
