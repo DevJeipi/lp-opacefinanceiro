@@ -62,13 +62,7 @@ export function QuizForm({ onComplete }: QuizFormProps = {}) {
     }
 
     const handlePhoneContinue = async () => {
-        // #region agent log
-        fetch('http://127.0.0.1:7242/ingest/a5abec79-40b3-429f-bf03-6a6603abed0c', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ location: 'QuizForm.tsx:60', message: 'handlePhoneContinue entry', data: { phone, phoneDigits: phone.replace(/\D/g, ''), phoneDigitsLength: phone.replace(/\D/g, '').length }, timestamp: Date.now(), sessionId: 'debug-session', runId: 'run1', hypothesisId: 'A' }) }).catch(() => { });
-        // #endregion
         const error = validatePhone(phone)
-        // #region agent log
-        fetch('http://127.0.0.1:7242/ingest/a5abec79-40b3-429f-bf03-6a6603abed0c', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ location: 'QuizForm.tsx:62', message: 'validatePhone result', data: { error, phone, phoneDigits: phone.replace(/\D/g, '') }, timestamp: Date.now(), sessionId: 'debug-session', runId: 'run1', hypothesisId: 'A' }) }).catch(() => { });
-        // #endregion
         if (error) {
             setErrors({ phone: error })
             return
@@ -83,35 +77,22 @@ export function QuizForm({ onComplete }: QuizFormProps = {}) {
                 phone: phone.trim(),
                 completedAt: new Date().toISOString(),
             }
-            // #region agent log
-            fetch('http://127.0.0.1:7242/ingest/a5abec79-40b3-429f-bf03-6a6603abed0c', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ location: 'QuizForm.tsx:73', message: 'quizData before save', data: { quizData, phoneDigits: quizData.phone.replace(/\D/g, ''), phoneDigitsLength: quizData.phone.replace(/\D/g, '').length }, timestamp: Date.now(), sessionId: 'debug-session', runId: 'run1', hypothesisId: 'C' }) }).catch(() => { });
-            // #endregion
 
             // Salva no cookie localmente
             try {
                 saveQuizData(quizData)
-                // #region agent log
-                fetch('http://127.0.0.1:7242/ingest/a5abec79-40b3-429f-bf03-6a6603abed0c', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ location: 'QuizForm.tsx:78', message: 'saveQuizData success', data: {}, timestamp: Date.now(), sessionId: 'debug-session', runId: 'run1', hypothesisId: 'C' }) }).catch(() => { });
-                // #endregion
             } catch (saveError) {
-                // #region agent log
-                fetch('http://127.0.0.1:7242/ingest/a5abec79-40b3-429f-bf03-6a6603abed0c', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ location: 'QuizForm.tsx:82', message: 'saveQuizData error', data: { error: String(saveError) }, timestamp: Date.now(), sessionId: 'debug-session', runId: 'run1', hypothesisId: 'C' }) }).catch(() => { });
-                // #endregion
                 throw saveError
             }
 
             // Envia para o webhook do n8n
-            // #region agent log
-            fetch('http://127.0.0.1:7242/ingest/a5abec79-40b3-429f-bf03-6a6603abed0c', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ location: 'QuizForm.tsx:86', message: 'before submitQuizData', data: { name: quizData.name, phone: quizData.phone, phoneDigits: quizData.phone.replace(/\D/g, '') }, timestamp: Date.now(), sessionId: 'debug-session', runId: 'run1', hypothesisId: 'A' }) }).catch(() => { });
-            // #endregion
             const result = await submitQuizData(quizData.name, quizData.phone)
-            // #region agent log
-            fetch('http://127.0.0.1:7242/ingest/a5abec79-40b3-429f-bf03-6a6603abed0c', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ location: 'QuizForm.tsx:88', message: 'submitQuizData result', data: { success: result.success, message: result.message }, timestamp: Date.now(), sessionId: 'debug-session', runId: 'run1', hypothesisId: 'A' }) }).catch(() => { });
-            // #endregion
 
             if (!result.success) {
                 // Se falhar o envio, ainda permite continuar (dados já estão no cookie)
-                console.warn('Aviso: Falha ao enviar dados para o servidor, mas dados salvos localmente')
+                console.warn(
+                    'Aviso: Falha ao enviar dados para o servidor, mas dados salvos localmente'
+                )
             }
 
             // Pequeno delay para feedback visual antes de redirecionar
@@ -125,9 +106,6 @@ export function QuizForm({ onComplete }: QuizFormProps = {}) {
                 router.push('/')
             }
         } catch (error) {
-            // #region agent log
-            fetch('http://127.0.0.1:7242/ingest/a5abec79-40b3-429f-bf03-6a6603abed0c', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ location: 'QuizForm.tsx:100', message: 'catch error', data: { error: String(error), errorStack: error instanceof Error ? error.stack : undefined }, timestamp: Date.now(), sessionId: 'debug-session', runId: 'run1', hypothesisId: 'B' }) }).catch(() => { });
-            // #endregion
             console.error('Erro ao salvar dados:', error)
             // Mesmo com erro, tenta redirecionar se o cookie foi salvo
             setErrors({ phone: 'Erro ao salvar dados. Tente novamente.' })
@@ -176,7 +154,7 @@ export function QuizForm({ onComplete }: QuizFormProps = {}) {
     }
 
     return (
-        <div className="w-full max-w-lg overflow-hidden rounded-lg bg-gradient-to-br from-primary-blue via-primary-blue to-secondary-blue p-6 shadow-2xl md:p-8">
+        <div className="from-primary-blue via-primary-blue to-secondary-blue w-full max-w-lg overflow-hidden rounded-lg bg-gradient-to-br p-6 shadow-2xl md:p-8">
             {/* Header com Logo e Texto */}
             <div className="mb-6 flex flex-col items-center gap-4">
                 <Image
@@ -189,28 +167,36 @@ export function QuizForm({ onComplete }: QuizFormProps = {}) {
                 />
                 <div className="flex items-center gap-2">
                     <ChevronDown className="text-primary-white" size={18} />
-                    <p className="font-body text-lg text-primary-white">
+                    <p className="font-body text-primary-white text-lg">
                         Preencha o formulário abaixo
                     </p>
                 </div>
             </div>
 
             {/* Card do Formulário */}
-            <div className="flex flex-col rounded-lg bg-primary-white p-6 md:p-8">
+            <div className="bg-primary-white flex flex-col rounded-lg p-6 md:p-8">
                 {/* Título e Label */}
                 <div className="mb-4">
-                    <label className="mb-2 block font-body text-sm font-medium text-primary-black">
+                    <label className="font-body text-primary-black mb-2 block text-sm font-medium">
                         {step === 'name' ? 'Nome Completo*' : 'Telefone*'}
                     </label>
                     <Input
                         type={step === 'name' ? 'text' : 'tel'}
                         value={step === 'name' ? name : phone}
-                        onChange={step === 'name' ? handleNameChange : handlePhoneChange}
+                        onChange={
+                            step === 'name'
+                                ? handleNameChange
+                                : handlePhoneChange
+                        }
                         onKeyDown={(e) => {
                             if (e.key === 'Enter') {
                                 if (step === 'name' && !errors.name) {
                                     handleNameContinue()
-                                } else if (step === 'phone' && !isSubmitting && !errors.phone) {
+                                } else if (
+                                    step === 'phone' &&
+                                    !isSubmitting &&
+                                    !errors.phone
+                                ) {
                                     handlePhoneContinue()
                                 }
                             }
@@ -221,7 +207,7 @@ export function QuizForm({ onComplete }: QuizFormProps = {}) {
                                 : '(00) 00000-0000'
                         }
                         className={cn(
-                            'w-full rounded-md border border-primary-blue/30 bg-primary-white px-4 py-3 font-body text-base text-primary-black placeholder:text-primary-blue/40 focus:border-primary-orange focus:outline-none focus:ring-2 focus:ring-primary-orange/20 transition-colors',
+                            'border-primary-blue/30 bg-primary-white font-body text-primary-black placeholder:text-primary-blue/40 focus:border-primary-orange focus:ring-primary-orange/20 w-full rounded-md border px-4 py-3 text-base transition-colors focus:ring-2 focus:outline-none',
                             errors.name || errors.phone
                                 ? 'border-secondary-orange focus:ring-secondary-orange/20'
                                 : ''
@@ -229,7 +215,7 @@ export function QuizForm({ onComplete }: QuizFormProps = {}) {
                         autoFocus
                     />
                     {(errors.name || errors.phone) && (
-                        <p className="mt-2 font-body text-sm text-secondary-orange">
+                        <p className="font-body text-secondary-orange mt-2 text-sm">
                             {errors.name || errors.phone}
                         </p>
                     )}
@@ -237,8 +223,8 @@ export function QuizForm({ onComplete }: QuizFormProps = {}) {
 
                 {/* Aviso de Privacidade - Apenas na primeira etapa */}
                 {step === 'name' && (
-                    <div className="mb-4 rounded-md bg-primary-blue/5 p-4">
-                        <p className="font-body text-sm leading-relaxed text-primary-black/80">
+                    <div className="bg-primary-blue/5 mb-4 rounded-md p-4">
+                        <p className="font-body text-primary-black/80 text-sm leading-relaxed">
                             Utilizaremos seus dados para enviar conteúdos
                             personalizados, ofertas e informações relevantes
                             alinhadas aos seus interesses. Seguindo, você
@@ -249,16 +235,16 @@ export function QuizForm({ onComplete }: QuizFormProps = {}) {
                 )}
 
                 {/* Barra de Progresso e Botão */}
-                <div className="mt-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+                <div className="mt-4 flex flex-col items-stretch justify-between gap-4 sm:flex-row sm:items-center">
                     <div className="flex items-center gap-3">
-                        <span className="font-body text-sm font-medium text-primary-black/70">
+                        <span className="font-body text-primary-black/70 text-sm font-medium">
                             {currentStep}/{totalSteps}
                         </span>
                         <Progress
                             value={progress}
-                            className="h-2 flex-1 sm:w-32 bg-primary-blue/20"
+                            className="bg-primary-blue/20 h-2 flex-1 sm:w-32"
                         >
-                            <div className="h-full w-full bg-gradient-animated" />
+                            <div className="bg-gradient-animated h-full w-full" />
                         </Progress>
                     </div>
                     <Button
@@ -281,7 +267,7 @@ export function QuizForm({ onComplete }: QuizFormProps = {}) {
                         <button
                             type="button"
                             onClick={() => setStep('name')}
-                            className="font-body text-sm text-primary-blue underline hover:text-primary-orange transition-colors"
+                            className="font-body text-primary-blue hover:text-primary-orange text-sm underline transition-colors"
                         >
                             Voltar
                         </button>
@@ -291,4 +277,3 @@ export function QuizForm({ onComplete }: QuizFormProps = {}) {
         </div>
     )
 }
-
