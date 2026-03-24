@@ -1,12 +1,10 @@
 import { BgImage } from '@/components/ui/BgImage'
 import { Button } from '@/components/ui/button'
 import { GridContainer } from '@/components/ui/GridContainer'
+import { LazyYouTube } from '@/components/ui/LazyYoutube'
 import { Shield } from 'lucide-react'
 
 export function SectionHero() {
-    const videoId = 'v8atXPQTLxs'
-    const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1&controls=1&loop=1&playlist=${videoId}`
-
     return (
         <section className="relative flex min-h-screen flex-col justify-start pb-12">
             <BgImage />
@@ -22,13 +20,9 @@ export function SectionHero() {
                 {/* Vídeo no meio */}
                 <div className="w-full max-w-md">
                     <div className="relative aspect-[9/16] w-full overflow-hidden rounded-2xl border-2 border-white shadow-lg">
-                        <iframe
-                            src={embedUrl}
-                            title="Aula inicial"
-                            className="h-full w-full"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullScreen
-                        />
+                        <div className="relative aspect-[9/16] w-full overflow-hidden rounded-2xl border-2 border-white shadow-lg">
+                            <LazyYouTube videoId="v8atXPQTLxs" />
+                        </div>
                     </div>
                     <div className="text-primary-white bg-primary-orange/40 -mt-3 rounded-b-xl pt-7 pb-4 text-center">
                         <p className="font-body text-base sm:text-xl">

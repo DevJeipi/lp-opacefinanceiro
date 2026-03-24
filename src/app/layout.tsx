@@ -98,7 +98,7 @@ export default function RootLayout({
             {/* Script do Google Tag Manager para o <head> */}
             <Script
                 id="gtm-script-head"
-                strategy="afterInteractive" // Carrega após a página se tornar interativa
+                strategy="lazyOnload" // Defer para depois do carregamento inicial
                 dangerouslySetInnerHTML={{
                     __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -112,7 +112,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             {/* Script do Facebook Pixel */}
             <Script
                 id="facebook-pixel"
-                strategy="afterInteractive"
+                strategy="lazyOnload"
                 dangerouslySetInnerHTML={{
                     __html: `
             !function(f,b,e,v,n,t,s)
