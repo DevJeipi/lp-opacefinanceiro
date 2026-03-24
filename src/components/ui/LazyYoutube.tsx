@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
 
 interface LazyYouTubeProps {
     videoId: string
@@ -40,12 +41,13 @@ export function LazyYouTube({ videoId, className = '' }: LazyYouTubeProps) {
         >
             {/* Thumbnail — mostrada até o iframe carregar */}
             {!isLoaded && (
-                <img
+                <Image
                     src={thumbnailUrl}
                     alt="Aula de 10 minutos sobre cheque especial"
-                    className="absolute inset-0 h-full w-full object-cover"
-                    // Pré-carrega a thumbnail com alta prioridade
-                    fetchPriority="high"
+                    fill
+                    priority
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 448px"
                 />
             )}
 
