@@ -95,6 +95,14 @@ export default function RootLayout({
             dir="ltr"
             className={`${lato.variable} ${conquera.variable}`}
         >
+            <head>
+                <link
+                    rel="preload"
+                    as="image"
+                    href="/videos/poster.jpg"
+                    fetchPriority="high" // isso resolve o aviso do Lighthouse
+                />
+            </head>
             {/* Script do Google Tag Manager para o <head> */}
             <Script
                 id="gtm-script-head"
