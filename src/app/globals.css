@@ -1,22 +1,7 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-/****FONTS****/
-@font-face {
-    font-family: 'Conquera';
-    src: url('/fonts/Conquera-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Conquera';
-    src: url('/fonts/Conquera-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/* Conquera: carregada via next/font/local em layout.tsx (adjustFontFallback reduz CLS) */
 
 @custom-variant dark (&:is(.dark *));
 
@@ -93,7 +78,7 @@
 
     --max-width-container: 87.5rem;
 
-    --font-heading: 'Conquera', sans-serif;
+    --font-heading: var(--font-conquera);
 
     --color-primary-black: #121212;
     --color-primary-white: #f2f1f2;

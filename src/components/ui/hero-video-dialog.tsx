@@ -78,11 +78,11 @@ export function HeroVideoDialog({
   const selectedAnimation = animationVariants[animationStyle]
 
   return (
-    <div className={cn("relative", className)}>
+    <div className={cn("relative aspect-[9/16] w-full", className)}>
       <button
         type="button"
         aria-label="Play video"
-        className="group relative cursor-pointer border-0 bg-transparent p-0"
+        className="group absolute inset-0 cursor-pointer border-0 bg-transparent p-0"
         onClick={() => setIsVideoOpen(true)}
       >
         <img
@@ -90,7 +90,7 @@ export function HeroVideoDialog({
           alt={thumbnailAlt}
           width={1080}
           height={1920}
-          className="w-full h-auto rounded-md border-4 border-yellow-400 shadow-lg transition-all duration-200 ease-out group-hover:brightness-[0.8] dark:border-yellow-400"
+          className="size-full rounded-md border-4 border-yellow-400 object-cover shadow-lg transition-all duration-200 ease-out group-hover:brightness-[0.8] dark:border-yellow-400"
         />
         <div className="absolute inset-0 flex scale-[0.9] items-center justify-center rounded-2xl transition-all duration-200 ease-out group-hover:scale-100">
           <div className="bg-slate-900/10 flex size-28 items-center justify-center rounded-full backdrop-blur-md dark:bg-slate-50/10">

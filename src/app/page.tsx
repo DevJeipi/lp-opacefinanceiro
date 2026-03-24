@@ -11,8 +11,6 @@ import { SectionGuarantee } from '@/components/home/SectionGuarantee'
 import { SectionFAQ } from '@/components/home/SectionFAQ'
 import { Footer } from '@/components/footer'
 
-import { GoogleTagManager } from '@next/third-parties/google'
-
 export default function Home() {
     return (
         <div className="flex min-h-screen flex-col overflow-hidden">
@@ -42,7 +40,6 @@ export default function Home() {
                 <SectionFAQ />
             </main>
             <Footer />
-            <GoogleTagManager gtmId="GTM-WT4GLWFJ" />
         </div>
     )
 }

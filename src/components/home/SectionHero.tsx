@@ -8,9 +8,9 @@ export function SectionHero() {
     const embedUrl = `https://www.youtube.com/embed/${videoId}?modestbranding=1&rel=0&showinfo=0&controls=1&fs=1&playsinline=1&cc_load_policy=0&iv_load_policy=3`;
 
     return (
-        <section className="relative min-h-screen flex flex-col items-center justify-center py-8">
+        <section className="relative flex min-h-screen flex-col justify-start pt-16 pb-12 sm:pt-20 md:pt-24">
             <BgImage />
-            <GridContainer className="flex flex-col items-center justify-center gap-8 z-10">
+            <GridContainer className="z-10 flex flex-col items-center justify-start gap-8">
                 {/* Título no topo */}
                 <div className="text-center text-primary-white px-4 w-full">
                     <h1 className="font-heading font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 leading-tight break-words">

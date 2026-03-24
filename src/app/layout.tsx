@@ -1,8 +1,27 @@
 import { Metadata } from 'next'
+import localFont from 'next/font/local'
 import { Lato } from 'next/font/google'
 import './globals.css'
 import Script from 'next/script'
 import { QuizProvider } from '@/components/quiz/QuizContext'
+
+const conquera = localFont({
+    src: [
+        {
+            path: '../../public/fonts/Conquera-Medium.woff2',
+            weight: '500',
+            style: 'normal',
+        },
+        {
+            path: '../../public/fonts/Conquera-Bold.woff2',
+            weight: '700',
+            style: 'normal',
+        },
+    ],
+    variable: '--font-conquera',
+    display: 'swap',
+    adjustFontFallback: 'Arial',
+})
 
 // Metadata for SEO
 export const metadata: Metadata = {
@@ -71,7 +90,11 @@ export default function RootLayout({
     children: React.ReactNode
 }>) {
     return (
-        <html lang="pt-br" dir="ltr">
+        <html
+            lang="pt-br"
+            dir="ltr"
+            className={`${lato.variable} ${conquera.variable}`}
+        >
             {/* Script do Google Tag Manager para o <head> */}
             <Script
                 id="gtm-script-head"
