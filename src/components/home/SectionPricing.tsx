@@ -114,17 +114,17 @@ export function SectionPricing() {
                             <div className="font-body text-secondary-orange flex items-end gap-1 font-normal">
                                 <p className="md:text-xl">De:</p>
                                 <span className="text-2xl line-through md:text-4xl">
-                                    R$ 197,00
+                                    R$ 297,00
                                 </span>
                             </div>
                             <div className="font-body mb-4 flex items-end gap-1">
                                 <p className="text-2xl md:text-3xl">Por:</p>
                                 <span className="text-4xl md:text-6xl">
-                                    R$ 97,00
+                                    R$ 197,00
                                 </span>
                             </div>
                             <Button link="curso" color="secondaryorange">
-                                QUERO SAIR DO VERMELHO POR R$ 97
+                                QUERO SAIR DO VERMELHO POR R$ 197
                             </Button>
                         </CardFooter>
                     </Card>

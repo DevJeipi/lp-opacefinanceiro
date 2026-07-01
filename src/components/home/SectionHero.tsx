@@ -18,7 +18,7 @@ export function SectionHero() {
                     <p className="font-body text-xs leading-tight break-words md:text-lg">
                         Pare de pagar juros abusivos e recupere o controle do
                         seu salário com o método do Otávio Daudt. Acesso
-                        vitalício por apenas R$ 97.
+                        vitalício por apenas R$ 197.
                     </p>
                 </div>
 
@@ -33,9 +33,9 @@ export function SectionHero() {
                     <div className="text-primary-white bg-primary-orange/40 -mt-3 rounded-b-xl pt-7 pb-4 text-center">
                         <p className="font-body text-base sm:text-xl">
                             <span className="text-2xl font-bold sm:text-3xl">
-                                R$ 97,00
+                                R$ 197,00
                             </span>{' '}
-                            ou 4x de R$ 26,40
+                            ou 6x de R$ 36,96
                         </p>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ export function SectionHero() {
                         color="secondaryorange"
                         className="w-full"
                     >
-                        QUERO SAIR DO VERMELHO POR R$ 97
+                        QUERO SAIR DO VERMELHO POR R$ 197
                     </Button>
                     <div className="bg-primary-white/10 border-primary-white/20 rounded-lg border p-4 backdrop-blur-sm">
                         <div className="flex items-start gap-3">
